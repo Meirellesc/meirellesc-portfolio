@@ -1,0 +1,22 @@
+﻿
+<MudContainer Class="d-flex flex-column justify-center pa-16" Style="height:60vh">
+
+    <MudText Align="Align.Center"
+             Typo="Typo.h3">
+        @HeaderTitle
+    </MudText>
+
+    <MudText Class="mt-4"
+             Align="Align.Center"
+             Typo="Typo.h5">
+        @HeaderSubtitle
+    </MudText>
+
+    <MudIconButton Class="mt-10"
+                   Size="Size.Large"
+                   Icon="@Icons.Material.Outlined.KeyboardArrowDown"
+                   DisableRipple="true"
+                   Style="width: max-content; align-self: center;" 
+                   OnClick="() => OnScrollToElement()"/>
+                    
+</MudContainer>

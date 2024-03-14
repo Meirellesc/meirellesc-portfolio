@@ -1,0 +1,55 @@
+﻿@inherits LayoutComponentBase;
+
+<MudThemeProvider Theme="DarkTheme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar  
+               Fixed="true"
+               Dense="false"
+               Elevation="4">
+
+        <MudButton Color="Color.Inherit"
+                   Link="/">
+            @StringLocalizer?["AppBar_Home"]
+        </MudButton>
+        <MudButton Color="Color.Inherit"
+                   Link="bio">
+            @StringLocalizer?["AppBar_Bio"]
+        </MudButton>
+        <MudButton Color="Color.Inherit"
+                   Link="works">
+            @StringLocalizer?["AppBar_Works"]
+        </MudButton>
+        <MudButton Color="Color.Inherit"
+                   Link="contact">
+            @StringLocalizer?["AppBar_Contact"]
+        </MudButton>
+
+        <MudSpacer />
+
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" 
+                       Color="Color.Inherit"
+                       Size="Size.Medium"
+                       Link="https://github.com/Meirellesc" 
+                       Target="_blank"/>
+
+        <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
+                       Color="Color.Inherit"
+                       Size="Size.Medium"
+                       Link="https://www.linkedin.com/in/lucasmeirellesc/"
+                       Target="_blank" />
+
+        <MudIconButton Icon="@Icons.Material.Outlined.Email"
+                       Color="Color.Inherit"
+                       Size="Size.Medium" />
+    </MudAppBar>
+
+
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="my-4 py-2">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>

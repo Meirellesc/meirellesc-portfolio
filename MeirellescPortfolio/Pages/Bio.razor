@@ -1,0 +1,12 @@
+﻿@page "/bio"
+@using MeirellescPortfolio.Components
+
+<PageTitle>Bio</PageTitle>
+
+<CascadingValue Name="HeaderTitle" Value="@StringLocalizer?["Bio_Header_Title"]">
+    <CascadingValue Name="HeaderSubtitle" Value="@StringLocalizer?["Bio_Header_Subtitle"]">
+        <HeaderCmpnt />
+    </CascadingValue>
+</CascadingValue>
+
+<FooterCmpnt />
