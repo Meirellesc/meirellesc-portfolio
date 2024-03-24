@@ -1,0 +1,14 @@
+﻿@page "/projects"
+@using MeirellescPortfolio.Components
+
+<PageTitle>@StringLocalizer?["Projects_Header_Title"]</PageTitle>
+
+<CascadingValue Name="HeaderTitle" Value="@StringLocalizer?["Projects_Header_Title"]">
+    <CascadingValue Name="HeaderSubtitle" Value="@StringLocalizer?["Projects_Header_Subtitle"]">
+        <HeaderCmpnt />
+    </CascadingValue>
+</CascadingValue>
+
+
+
+<FooterCmpnt />

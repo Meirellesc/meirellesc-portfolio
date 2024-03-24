@@ -1,14 +1,60 @@
 ﻿@page "/contact"
- @using MeirellescPortfolio.Components
+@using MeirellescPortfolio.Components
 
-<PageTitle>Works</PageTitle>
+@using System.Text.RegularExpressions
+@using System.ComponentModel.DataAnnotations
 
-<CascadingValue Name="HeaderTitle" Value="@StringLocalizer?["Contact_Header_Title"]">
-    <CascadingValue Name="HeaderSubtitle" Value="@StringLocalizer?["Contact_Header_Subtitle"]">
+<PageTitle>@StringLocalizer!["Contact_Header_Title"]</PageTitle>
+
+<CascadingValue Name="HeaderTitle" Value="@StringLocalizer!["Contact_Header_Title"]">
+    <CascadingValue Name="HeaderSubtitle" Value="@StringLocalizer!["Contact_Header_Subtitle"]">
         <HeaderCmpnt />
     </CascadingValue>
 </CascadingValue>
 
+<MudGrid Class="d-flex justify-center mb-16">
+    <MudItem xs="6">
+        <MudForm @bind-IsValid="@success" 
+                 Class="d-flex flex-column gap-6">
+
+            <MudTextField T="string" 
+                          Label="@StringLocalizer!["Contact_Form_Name"]"
+                          Variant="Variant.Outlined"
+                          Required="true" 
+                          RequiredError="@StringLocalizer!["Contact_Form_NameRequired"]" />
+
+            <MudTextField T="string" 
+                          Label="@StringLocalizer!["Contact_Form_Email"]"
+                          Variant="Variant.Outlined"
+                          Required="true" 
+                          RequiredError="@StringLocalizer!["Contact_Form_EmailRequired"]"
+                          Validation="@(new EmailAddressAttribute() {ErrorMessage = @StringLocalizer!["Contact_Form_EmailError"]})" />
+                                
+                          @*TODO travar para adicionar apenas numero *@
+            <MudTextField T="string"
+                          Label="@StringLocalizer!["Contact_Form_Phone"]"
+                          Variant="Variant.Outlined"
+                          Required="false"/>
+
+            <MudTextField T="string" 
+                          Label="@StringLocalizer!["Contact_Form_Message"]"
+                          Variant="Variant.Outlined"
+                          Lines="5"
+                          Required="true"
+                          RequiredError="@StringLocalizer!["Contact_Form_MessageRequired"]" />
+
+
+            <MudItem Class="d-flex justify-end mt-4">
+                <MudButton Variant="Variant.Outlined" 
+                           Color="Color.Primary" 
+                           Disabled="@(!success)" 
+                           Class="ml-auto">
+                    @StringLocalizer!["Contact_Form_Send"]
+                </MudButton>
+            </MudItem>
+        </MudForm>
+    </MudItem>
+</MudGrid>
 
 
 <FooterCmpnt />

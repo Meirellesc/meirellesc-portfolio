@@ -126,14 +126,63 @@
   <data name="AppBar_Home" xml:space="preserve">
     <value>Home</value>
   </data>
-  <data name="AppBar_Works" xml:space="preserve">
-    <value>Works</value>
+  <data name="AppBar_Projects" xml:space="preserve">
+    <value>Projects</value>
   </data>
   <data name="Bio_Header_Subtitle" xml:space="preserve">
     <value>My Main Character</value>
   </data>
   <data name="Bio_Header_Title" xml:space="preserve">
     <value>Bio</value>
+  </data>
+  <data name="Bio_MiniBio" xml:space="preserve">
+    <value>Currently working as a Game Developer (Unity) and Back-End Developer (.NET).
+Graduated in Bachelor of Automation and Control's Engineer and Technician in Mechatronics, with advanced knowledge in:
+・ Unity; 
+・ Object Oriented Programming (C# and Java);
+・ Web (Blazor and Javascript); 
+・Concepts of 'design patterns' (SOLID);
+・ Unit Tests.
+
+In 2018, I did an exchange program at the University of Alicante (Spain), when I was able to be in contact with different cultures and languages, besides to expanding my technical knowledge in programming and games.
+
+Currently working as a Game Developer (Unity) and Back-End Developer (.NET).
+Graduated in Bachelor of Automation and Control's Engineer and Technician in Mechatronics, with advanced knowledge in:
+・ Unity; 
+・ Object Oriented Programming (C# and Java);
+・ Web (Blazor and Javascript); 
+・Concepts of 'design patterns' (SOLID);
+・ Unit Tests.
+
+In 2018, I did an exchange program at the University of Alicante (Spain), when I was able to be in contact with different cultures and languages, besides to expanding my technical knowledge in programming and games.
+I have good communication, ability to work together with a team, plan and organize tasks easily.</value>
+  </data>
+  <data name="Contact_Form_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Contact_Form_EmailError" xml:space="preserve">
+    <value>The e-mail address is invalid</value>
+  </data>
+  <data name="Contact_Form_EmailRequired" xml:space="preserve">
+    <value>E-mail is required!</value>
+  </data>
+  <data name="Contact_Form_Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Contact_Form_MessageRequired" xml:space="preserve">
+    <value>Message is required!</value>
+  </data>
+  <data name="Contact_Form_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Contact_Form_NameRequired" xml:space="preserve">
+    <value>Name is required!</value>
+  </data>
+  <data name="Contact_Form_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Contact_Form_Send" xml:space="preserve">
+    <value>Send</value>
   </data>
   <data name="Contact_Header_Subtitle" xml:space="preserve">
     <value>Let's Team Up</value>
@@ -147,10 +196,10 @@
   <data name="Home" xml:space="preserve">
     <value>HOME</value>
   </data>
-  <data name="Works_Header_Subtitle" xml:space="preserve">
+  <data name="Projects_Header_Subtitle" xml:space="preserve">
     <value>Leveling Up My Career</value>
   </data>
-  <data name="Works_Header_Title" xml:space="preserve">
-    <value>Works</value>
+  <data name="Projects_Header_Title" xml:space="preserve">
+    <value>Projects</value>
   </data>
 </root>

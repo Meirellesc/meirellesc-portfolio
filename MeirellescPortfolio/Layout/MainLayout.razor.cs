@@ -8,6 +8,21 @@ namespace MeirellescPortfolio.Layout
     public partial class MainLayout : LayoutComponentBase
     {
         [Inject] IStringLocalizer<Resource>? StringLocalizer { get; set; }
+        [Inject] NavigationManager? NavigationManager { get; set; }
+
+        private bool _isHomePage;
+
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+            _isHomePage = NavigationManager!.Uri.EndsWith('/');
+        }
+
+        protected override bool ShouldRender()
+        {
+            _isHomePage = NavigationManager!.Uri.EndsWith('/');
+            return base.ShouldRender();
+        }
 
         MudTheme DarkTheme = new MudTheme()
         {

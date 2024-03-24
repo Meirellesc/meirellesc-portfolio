@@ -1,9 +1,70 @@
 ﻿@page "/"
 @using MeirellescPortfolio.Components
 
-<PageTitle>Home</PageTitle>
+<PageTitle>@StringLocalizer?["Home"]</PageTitle>
 
+<MudGrid Class="d-flex justify-center" Style="height: 80vh">
+    <MudItem xs="12" 
+             Class="d-flex flex-column justify-center align-center">
+        
+        <MudText Typo="Typo.h3"> 
+            Lucas Meirelles 
+        </MudText>
 
-<h1 style="height:200vh">@StringLocalizer?["Home"]</h1>
+        <MudText Typo="Typo.h6"
+                 Align="Align.Center">
+            Game & Software Developer
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="4" sm="3" md="2" 
+             Class="d-flex flex-column justify-center align-center gap-8">
+
+        <MudButton Color="Color.Inherit"
+                   Link="bio"
+                   Variant="Variant.Outlined"
+                   Style="width:100%">
+            @StringLocalizer?["AppBar_Bio"]
+        </MudButton>
+
+        <MudButton Color="Color.Inherit"
+                   Link="projects"
+                   Variant="Variant.Outlined"
+                   Style="width:100%">
+            @StringLocalizer?["AppBar_Projects"]
+        </MudButton>
+
+        <MudButton Color="Color.Inherit"
+                   Link="contact"
+                   Variant="Variant.Outlined"
+                   Style="width:100%">
+            @StringLocalizer?["AppBar_Contact"]
+        </MudButton>
+
+    </MudItem>
+
+    <MudItem xs="12"
+             Class="d-flex flex-wrap flex-row justify-center align-center gap-4">
+
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub"
+                       Color="Color.Inherit"
+                       Size="Size.Small"
+                       Link="https://github.com/Meirellesc"
+                       Target="_blank" />
+
+        <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
+                       Color="Color.Inherit"
+                       Size="Size.Small"
+                       Link="https://www.linkedin.com/in/lucasmeirellesc/"
+                       Target="_blank" />
+
+        <MudIconButton Icon="@Icons.Material.Outlined.Email"
+                       Color="Color.Inherit"
+                       Size="Size.Small"
+                       Link="contact" />
+
+    </MudItem>
+    
+</MudGrid>
 
 <FooterCmpnt/>

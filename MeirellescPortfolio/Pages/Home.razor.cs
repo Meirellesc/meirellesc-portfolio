@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 using MeirellescPortfolio.Components;
+using MeirellescPortfolio.Layout;
 
 namespace MeirellescPortfolio.Pages
 {

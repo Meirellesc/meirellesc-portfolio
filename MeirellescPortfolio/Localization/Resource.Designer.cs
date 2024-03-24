@@ -88,11 +88,11 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Works.
+        ///   Looks up a localized string similar to Projects.
         /// </summary>
-        public static string AppBar_Works {
+        public static string AppBar_Projects {
             get {
-                return ResourceManager.GetString("AppBar_Works", resourceCulture);
+                return ResourceManager.GetString("AppBar_Projects", resourceCulture);
             }
         }
         
@@ -111,6 +111,104 @@ namespace MeirellescPortfolio.Localization {
         public static string Bio_Header_Title {
             get {
                 return ResourceManager.GetString("Bio_Header_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currently working as a Game Developer (Unity) and Back-End Developer (.NET).
+        ///Graduated in Bachelor of Automation and Control&apos;s Engineer and Technician in Mechatronics, with advanced knowledge in:
+        ///・ Unity; 
+        ///・ Object Oriented Programming (C# and Java);
+        ///・ Web (Blazor and Javascript); 
+        ///・Concepts of &apos;design patterns&apos; (SOLID);
+        ///・ Unit Tests.
+        ///
+        ///In 2018, I did an exchange program at the University of Alicante (Spain), when I was able to be in contact with different cultures and languages, besides to expanding [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Bio_MiniBio {
+            get {
+                return ResourceManager.GetString("Bio_MiniBio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-mail.
+        /// </summary>
+        public static string Contact_Form_Email {
+            get {
+                return ResourceManager.GetString("Contact_Form_Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The e-mail address is invalid.
+        /// </summary>
+        public static string Contact_Form_EmailError {
+            get {
+                return ResourceManager.GetString("Contact_Form_EmailError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-mail is required!.
+        /// </summary>
+        public static string Contact_Form_EmailRequired {
+            get {
+                return ResourceManager.GetString("Contact_Form_EmailRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        public static string Contact_Form_Message {
+            get {
+                return ResourceManager.GetString("Contact_Form_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message is required!.
+        /// </summary>
+        public static string Contact_Form_MessageRequired {
+            get {
+                return ResourceManager.GetString("Contact_Form_MessageRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string Contact_Form_Name {
+            get {
+                return ResourceManager.GetString("Contact_Form_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name is required!.
+        /// </summary>
+        public static string Contact_Form_NameRequired {
+            get {
+                return ResourceManager.GetString("Contact_Form_NameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone.
+        /// </summary>
+        public static string Contact_Form_Phone {
+            get {
+                return ResourceManager.GetString("Contact_Form_Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send.
+        /// </summary>
+        public static string Contact_Form_Send {
+            get {
+                return ResourceManager.GetString("Contact_Form_Send", resourceCulture);
             }
         }
         
@@ -153,18 +251,18 @@ namespace MeirellescPortfolio.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Leveling Up My Career.
         /// </summary>
-        public static string Works_Header_Subtitle {
+        public static string Projects_Header_Subtitle {
             get {
-                return ResourceManager.GetString("Works_Header_Subtitle", resourceCulture);
+                return ResourceManager.GetString("Projects_Header_Subtitle", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Works.
+        ///   Looks up a localized string similar to Projects.
         /// </summary>
-        public static string Works_Header_Title {
+        public static string Projects_Header_Title {
             get {
-                return ResourceManager.GetString("Works_Header_Title", resourceCulture);
+                return ResourceManager.GetString("Projects_Header_Title", resourceCulture);
             }
         }
     }

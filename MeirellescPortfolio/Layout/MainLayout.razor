@@ -5,47 +5,57 @@
 <MudSnackbarProvider />
 
 <MudLayout>
-    <MudAppBar  
-               Fixed="true"
-               Dense="false"
-               Elevation="4">
+    @if (_isHomePage)
+    {
 
-        <MudButton Color="Color.Inherit"
-                   Link="/">
-            @StringLocalizer?["AppBar_Home"]
-        </MudButton>
-        <MudButton Color="Color.Inherit"
-                   Link="bio">
-            @StringLocalizer?["AppBar_Bio"]
-        </MudButton>
-        <MudButton Color="Color.Inherit"
-                   Link="works">
-            @StringLocalizer?["AppBar_Works"]
-        </MudButton>
-        <MudButton Color="Color.Inherit"
-                   Link="contact">
-            @StringLocalizer?["AppBar_Contact"]
-        </MudButton>
+    }
+    else
+    {
+        <MudAppBar Fixed="true"
+                   Dense="false"
+                   Elevation="4">
 
-        <MudSpacer />
+            <MudButton Color="Color.Inherit"
+                       Link="/">
+                @StringLocalizer?["AppBar_Home"]
+            </MudButton>
+            <MudButton Color="Color.Inherit"
+                       Link="bio">
+                @StringLocalizer?["AppBar_Bio"]
+            </MudButton>
+            <MudButton Color="Color.Inherit"
+                       Link="projects">
+                @StringLocalizer?["AppBar_Projects"]
+            </MudButton>
+            <MudButton Color="Color.Inherit"
+                       Link="contact">
+                @StringLocalizer?["AppBar_Contact"]
+            </MudButton>
 
-        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" 
-                       Color="Color.Inherit"
-                       Size="Size.Medium"
-                       Link="https://github.com/Meirellesc" 
-                       Target="_blank"/>
+            <MudSpacer />
 
-        <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
-                       Color="Color.Inherit"
-                       Size="Size.Medium"
-                       Link="https://www.linkedin.com/in/lucasmeirellesc/"
-                       Target="_blank" />
+            <MudItem Class="d-flex flex-wrap flex-row justify-center align-center gap-2">
 
-        <MudIconButton Icon="@Icons.Material.Outlined.Email"
-                       Color="Color.Inherit"
-                       Size="Size.Medium" />
-    </MudAppBar>
+            <MudIconButton Icon="@Icons.Custom.Brands.GitHub" 
+                           Color="Color.Inherit"
+                           Size="Size.Small"
+                           Link="https://github.com/Meirellesc" 
+                           Target="_blank"/>
 
+            <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
+                           Color="Color.Inherit"
+                           Size="Size.Small"
+                           Link="https://www.linkedin.com/in/lucasmeirellesc/"
+                           Target="_blank" />
+
+            <MudIconButton Icon="@Icons.Material.Outlined.Email"
+                           Color="Color.Inherit"
+                           Size="Size.Small"
+                           Link="contact" />
+
+            </MudItem>
+        </MudAppBar>
+    }
 
     <MudMainContent>
         <MudContainer MaxWidth="MaxWidth.Large" Class="my-4 py-2">

@@ -1,4 +1,5 @@
-﻿using MeirellescPortfolio.Localization;
+﻿using MeirellescPortfolio.Layout;
+using MeirellescPortfolio.Localization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 

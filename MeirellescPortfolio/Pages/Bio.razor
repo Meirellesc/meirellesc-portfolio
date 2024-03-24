@@ -1,12 +1,22 @@
 ﻿@page "/bio"
 @using MeirellescPortfolio.Components
 
-<PageTitle>Bio</PageTitle>
+<PageTitle>@StringLocalizer?["Bio_Header_Title"]</PageTitle>
 
 <CascadingValue Name="HeaderTitle" Value="@StringLocalizer?["Bio_Header_Title"]">
     <CascadingValue Name="HeaderSubtitle" Value="@StringLocalizer?["Bio_Header_Subtitle"]">
         <HeaderCmpnt />
     </CascadingValue>
 </CascadingValue>
+
+<MudGrid Class="d-flex justify-center mb-16">
+    <MudItem xs="12" md="6">
+        <MudText> @StringLocalizer?["Bio_MiniBio"] </MudText>
+    </MudItem>
+
+    <MudItem xs="12" md="6">
+        <MudImage> Texto 2 </MudImage>
+    </MudItem>
+</MudGrid>
 
 <FooterCmpnt />
