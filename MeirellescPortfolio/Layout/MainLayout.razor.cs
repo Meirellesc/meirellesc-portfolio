@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 using MudBlazor;
+using MudBlazor.Utilities;
 
 namespace MeirellescPortfolio.Layout
 {
@@ -24,14 +25,16 @@ namespace MeirellescPortfolio.Layout
             return base.ShouldRender();
         }
 
-        MudTheme DarkTheme = new MudTheme()
+        MudTheme CustomTheme = new MudTheme()
         {
             Palette = new PaletteDark()
             {
-                
+                BackgroundGrey = new MudColor("#000000"),
+                Background = new MudColor("#000000"),
+                AppbarBackground = new MudColor("#000000"),
             },
             
-
+            
             LayoutProperties = new LayoutProperties()
             {
                 DrawerWidthLeft = "260px",

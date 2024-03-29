@@ -1,21 +1,23 @@
 ﻿@page "/bio"
 @using MeirellescPortfolio.Components
 
-<PageTitle>@StringLocalizer?["Bio_Header_Title"]</PageTitle>
+<PageTitle>@((MarkupString)StringLocalizer!["Title_Bio"].Value)</PageTitle>
 
-<CascadingValue Name="HeaderTitle" Value="@StringLocalizer?["Bio_Header_Title"]">
-    <CascadingValue Name="HeaderSubtitle" Value="@StringLocalizer?["Bio_Header_Subtitle"]">
+<CascadingValue Name="HeaderTitle" Value="@(StringLocalizer!["Bio_Header_Title"])">
+    <CascadingValue Name="HeaderSubtitle" Value="@(StringLocalizer!["Bio_Header_Subtitle"])">
         <HeaderCmpnt />
     </CascadingValue>
 </CascadingValue>
 
 <MudGrid Class="d-flex justify-center mb-16">
     <MudItem xs="12" md="6">
-        <MudText> @StringLocalizer?["Bio_MiniBio"] </MudText>
+        <MudText Align="Align.Justify"> @((MarkupString)StringLocalizer!["Bio_MiniBio"].Value)</MudText>
     </MudItem>
 
     <MudItem xs="12" md="6">
-        <MudImage> Texto 2 </MudImage>
+        <MudImage Src="/assets/imgs/Me2.jpeg"
+                  Alt="Profile photo of Lucas Meirelles"
+                  Fluid="true"/>
     </MudItem>
 </MudGrid>
 

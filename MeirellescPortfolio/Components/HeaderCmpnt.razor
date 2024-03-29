@@ -3,13 +3,13 @@
 
     <MudText Align="Align.Center"
              Typo="Typo.h3">
-        @HeaderTitle
+        @((MarkupString)HeaderTitle!.Value)
     </MudText>
 
     <MudText Class="mt-4"
              Align="Align.Center"
              Typo="Typo.h5">
-        @HeaderSubtitle
+        @((MarkupString)HeaderSubtitle!.Value)
     </MudText>
 
     <MudIconButton Class="mt-10"

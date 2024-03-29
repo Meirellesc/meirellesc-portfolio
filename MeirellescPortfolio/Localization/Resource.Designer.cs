@@ -116,14 +116,14 @@ namespace MeirellescPortfolio.Localization {
         
         /// <summary>
         ///   Looks up a localized string similar to Currently working as a Game Developer (Unity) and Back-End Developer (.NET).
-        ///Graduated in Bachelor of Automation and Control&apos;s Engineer and Technician in Mechatronics, with advanced knowledge in:
-        ///・ Unity; 
-        ///・ Object Oriented Programming (C# and Java);
-        ///・ Web (Blazor and Javascript); 
-        ///・Concepts of &apos;design patterns&apos; (SOLID);
-        ///・ Unit Tests.
-        ///
-        ///In 2018, I did an exchange program at the University of Alicante (Spain), when I was able to be in contact with different cultures and languages, besides to expanding [rest of string was truncated]&quot;;.
+        ///Graduated in Bachelor of Automation and Control&apos;s Engineer and Technician in Mechatronics, with advanced knowledge in: &lt;br&gt;
+        ///・ Unity;&lt;br&gt;
+        ///・ Object Oriented Programming (C# and Java);&lt;br&gt;
+        ///・ Web (Blazor and Javascript);&lt;br&gt;
+        ///・Concepts of &apos;design patterns&apos; (SOLID);&lt;br&gt;
+        ///・ Unit Tests.&lt;br&gt;
+        ///&lt;br&gt;&lt;br&gt;
+        ///In 2018, I did an exchange program at the University of Alicante (Spain), when I was able to be in contact with different cultures and  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Bio_MiniBio {
             get {
@@ -263,6 +263,51 @@ namespace MeirellescPortfolio.Localization {
         public static string Projects_Header_Title {
             get {
                 return ResourceManager.GetString("Projects_Header_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is the first line.&lt;br&gt;This is the second line..
+        /// </summary>
+        public static string Test {
+            get {
+                return ResourceManager.GetString("Test", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Meirellesc - Bio.
+        /// </summary>
+        public static string Title_Bio {
+            get {
+                return ResourceManager.GetString("Title_Bio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Meirellesc - Contact.
+        /// </summary>
+        public static string Title_Contact {
+            get {
+                return ResourceManager.GetString("Title_Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Meirellesc - Home.
+        /// </summary>
+        public static string Title_Home {
+            get {
+                return ResourceManager.GetString("Title_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Meirellesc - Projects.
+        /// </summary>
+        public static string Title_Projects {
+            get {
+                return ResourceManager.GetString("Title_Projects", resourceCulture);
             }
         }
     }

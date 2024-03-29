@@ -4,7 +4,7 @@
 @using System.Text.RegularExpressions
 @using System.ComponentModel.DataAnnotations
 
-<PageTitle>@StringLocalizer!["Contact_Header_Title"]</PageTitle>
+<PageTitle>@((MarkupString)StringLocalizer!["Title_Contact"].Value)</PageTitle>
 
 <CascadingValue Name="HeaderTitle" Value="@StringLocalizer!["Contact_Header_Title"]">
     <CascadingValue Name="HeaderSubtitle" Value="@StringLocalizer!["Contact_Header_Subtitle"]">
@@ -19,12 +19,14 @@
 
             <MudTextField T="string" 
                           Label="@StringLocalizer!["Contact_Form_Name"]"
+                          Placeholder="//Your name"
                           Variant="Variant.Outlined"
                           Required="true" 
                           RequiredError="@StringLocalizer!["Contact_Form_NameRequired"]" />
 
             <MudTextField T="string" 
                           Label="@StringLocalizer!["Contact_Form_Email"]"
+                          Placeholder="//Your e-mail"
                           Variant="Variant.Outlined"
                           Required="true" 
                           RequiredError="@StringLocalizer!["Contact_Form_EmailRequired"]"
@@ -33,11 +35,13 @@
                           @*TODO travar para adicionar apenas numero *@
             <MudTextField T="string"
                           Label="@StringLocalizer!["Contact_Form_Phone"]"
+                          Placeholder="//Your phone (if you want)"
                           Variant="Variant.Outlined"
                           Required="false"/>
 
             <MudTextField T="string" 
                           Label="@StringLocalizer!["Contact_Form_Message"]"
+                          Placeholder="//Leave a comment here"
                           Variant="Variant.Outlined"
                           Lines="5"
                           Required="true"
