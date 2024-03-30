@@ -249,6 +249,42 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to /projects/ceffect8.
+        /// </summary>
+        public static string Project1_AddressPath {
+            get {
+                return ResourceManager.GetString("Project1_AddressPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /assets/projects/ceffect8/ceffect8_card.png.
+        /// </summary>
+        public static string Project1_ImagePath {
+            get {
+                return ResourceManager.GetString("Project1_ImagePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAGE JAM.
+        /// </summary>
+        public static string Project1_Subtitle {
+            get {
+                return ResourceManager.GetString("Project1_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CEffect8.
+        /// </summary>
+        public static string Project1_Title {
+            get {
+                return ResourceManager.GetString("Project1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Leveling Up My Career.
         /// </summary>
         public static string Projects_Header_Subtitle {

@@ -185,6 +185,18 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
   <data name="Home" xml:space="preserve">
     <value>HOME</value>
   </data>
+  <data name="Project1_AddressPath" xml:space="preserve">
+    <value>/projects/ceffect8</value>
+  </data>
+  <data name="Project1_ImagePath" xml:space="preserve">
+    <value>/assets/projects/ceffect8/ceffect8_card.png</value>
+  </data>
+  <data name="Project1_Subtitle" xml:space="preserve">
+    <value>MAGE JAM</value>
+  </data>
+  <data name="Project1_Title" xml:space="preserve">
+    <value>CEffect8</value>
+  </data>
   <data name="Projects_Header_Subtitle" xml:space="preserve">
     <value>Leveling Up My Career</value>
   </data>
