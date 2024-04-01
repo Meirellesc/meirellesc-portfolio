@@ -1,20 +1,43 @@
 using Majorsoft.Blazor.Components.Common.JsInterop;
 using MeirellescPortfolio;
+using MeirellescPortfolio.Localization;
+using MeirellescPortfolio.Services;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.Extensions.Localization;
 using MudBlazor.Services;
 
-var builder = WebAssemblyHostBuilder.CreateDefault(args);
+public class Program
+{
+    public static async Task Main(string[] args)
+    {
+        WebAssemblyHostBuilder? builder = WebAssemblyHostBuilder.CreateDefault(args);
+        builder.RootComponents.Add<App>("#app");
+        builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.RootComponents.Add<App>("#app");
-builder.RootComponents.Add<HeadOutlet>("head::after");
+        ConfigureServices(builder);
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+        var host = builder.Build();
 
-builder.Services.AddMudServices();
+        // Resolve the service and call the method
+        var localizationService = host.Services.GetRequiredService<IStringLocalizer<Resource>>();
+        var projectService = host.Services.GetRequiredService<IProjectService>();
+        await projectService.LoadSetupData(localizationService);
 
-builder.Services.AddJsInteropExtensions();
+        await host.RunAsync();
+    }
 
-builder.Services.AddLocalization();
+    private static void ConfigureServices(WebAssemblyHostBuilder builder)
+    {
+        builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
-await builder.Build().RunAsync();
+        builder.Services.AddMudServices();
+
+        builder.Services.AddJsInteropExtensions();
+
+        builder.Services.AddLocalization();
+
+        builder.Services.AddSingleton<IProjectService, ProjectService>();
+    }
+}

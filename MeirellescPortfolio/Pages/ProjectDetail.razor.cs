@@ -1,16 +1,26 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using MeirellescPortfolio.Models;
+using MeirellescPortfolio.Services;
+using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 
 namespace MeirellescPortfolio.Pages
 {
     partial  class ProjectDetail: ComponentBase
     {
-        [Parameter] public string? ProjectPath { get; set; }
+        [Inject] IProjectService? ProjectService { get; set; }
 
-        protected override void OnParametersSet()
+        [Parameter] public string? ProjectTitle { get; set; }
+
+        private ProjectModel? _projectModel;
+
+
+        protected override Task OnParametersSetAsync()
         {
-            ProjectPath = ProjectPath ?? "null";
-        }
+            ProjectTitle = ProjectTitle ?? "null";
 
+            _projectModel = ProjectService!.GetProjectbyTitle(ProjectTitle).Result;
+
+            return base.OnParametersSetAsync();
+        }
     }
 }

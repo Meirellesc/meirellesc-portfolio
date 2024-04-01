@@ -1,5 +1,6 @@
 ﻿using MeirellescPortfolio.Localization;
 using MeirellescPortfolio.Models;
+using MeirellescPortfolio.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 
@@ -9,21 +10,14 @@ namespace MeirellescPortfolio.Pages
     {
         [Inject] IStringLocalizer<Resource>? StringLocalizer { get; set; }
         [Inject] NavigationManager? NavigationManager { get; set; }
+        [Inject] IProjectService? ProjectService { get; set; }
 
-        private List<ProjectModel>? ProjectsModel { get; set; } = new List<ProjectModel>();
+        private List<ProjectModel>? _projects { get; set; } = new List<ProjectModel>();
 
-        protected override void OnInitialized()
+
+        protected override async Task OnInitializedAsync()
         {
-            base.OnInitialized();
-
-            ProjectsModel.Add(
-                new ProjectModel()
-                {
-                    GameTitle = StringLocalizer![$"Project{1}_Title"],
-                    GameSubtitle = StringLocalizer![$"Project{1}_Subtitle"],
-                    AddressPath = StringLocalizer![$"Project{1}_AddressPath"],
-                    ImagePath = StringLocalizer![$"Project{1}_ImagePath"]
-                });
+            _projects = await ProjectService!.GetProjects();
         }
 
         void OnCardClick(string path)

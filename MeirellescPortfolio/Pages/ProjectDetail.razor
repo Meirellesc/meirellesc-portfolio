@@ -1,5 +1,10 @@
-﻿@page "/projects/{ProjectPath?}"
+﻿@page "/projects/{ProjectTitle?}"
 
 <MudText Typo="Typo.h3">
-    @ProjectPath
+    @ProjectTitle
+</MudText>         
+
+<MudText Typo="Typo.h3">
+    @_projectModel.GameTitle
+    @_projectModel.GameSubtitle
 </MudText>
