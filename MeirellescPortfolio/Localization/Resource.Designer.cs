@@ -249,11 +249,20 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /projects/ceffect8.
+        ///   Looks up a localized string similar to /projects/CEffect8.
         /// </summary>
         public static string Project1_AddressPath {
             get {
                 return ResourceManager.GetString("Project1_AddressPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /assets/icons/game_icon.svg.
+        /// </summary>
+        public static string Project1_IconPath {
+            get {
+                return ResourceManager.GetString("Project1_IconPath", resourceCulture);
             }
         }
         

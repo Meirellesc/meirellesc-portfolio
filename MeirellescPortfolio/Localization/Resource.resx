@@ -186,7 +186,10 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
     <value>HOME</value>
   </data>
   <data name="Project1_AddressPath" xml:space="preserve">
-    <value>/projects/ceffect8</value>
+    <value>/projects/CEffect8</value>
+  </data>
+  <data name="Project1_IconPath" xml:space="preserve">
+    <value>/assets/icons/game_icon.svg</value>
   </data>
   <data name="Project1_ImagePath" xml:space="preserve">
     <value>/assets/projects/ceffect8/ceffect8_card.png</value>

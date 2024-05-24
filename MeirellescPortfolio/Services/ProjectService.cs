@@ -22,7 +22,8 @@ namespace MeirellescPortfolio.Services
                     GameTitle = title,
                     GameSubtitle = StringLocalizer[$"Project{i}_Subtitle"],
                     AddressPath = StringLocalizer[$"Project{i}_AddressPath"],
-                    ImagePath = StringLocalizer[$"Project{i}_ImagePath"]
+                    ImagePath = StringLocalizer[$"Project{i}_ImagePath"],
+                    IconPath = StringLocalizer[$"Project{i}_IconPath"]
                 };
 
                 AddProject(pModel);

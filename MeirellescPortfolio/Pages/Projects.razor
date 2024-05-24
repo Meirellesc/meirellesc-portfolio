@@ -27,9 +27,9 @@
                          onclick="@(() => OnCardClick(@project.AddressPath))">
 
                     <MudCardHeader>
-                        @* <CardHeaderAvatar>
-                            <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                        </CardHeaderAvatar> *@
+                        <CardHeaderAvatar>
+                            <MudIcon Icon="@project.IconPath" />
+                        </CardHeaderAvatar>
 
                         <CardHeaderContent>
                             <MudItem Class="d-flex flex-column">
