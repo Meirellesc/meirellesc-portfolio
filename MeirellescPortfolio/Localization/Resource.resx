@@ -186,18 +186,48 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
     <value>HOME</value>
   </data>
   <data name="Project1_AddressPath" xml:space="preserve">
-    <value>/projects/CEffect8</value>
-  </data>
-  <data name="Project1_IconPath" xml:space="preserve">
-    <value>/assets/icons/game_icon.svg</value>
+    <value>/projects/TheMysteryOfHistoricalHeritage</value>
   </data>
   <data name="Project1_ImagePath" xml:space="preserve">
-    <value>/assets/projects/ceffect8/ceffect8_card.png</value>
+    <value>/assets/projects/theMystery/theMystery_card.png</value>
+  </data>
+  <data name="Project1_ProjectType" xml:space="preserve">
+    <value>Game</value>
   </data>
   <data name="Project1_Subtitle" xml:space="preserve">
-    <value>MAGE JAM</value>
+    <value>PG</value>
   </data>
   <data name="Project1_Title" xml:space="preserve">
+    <value>The Mystery Of Historical Heritage</value>
+  </data>
+  <data name="Project2_AddressPath" xml:space="preserve">
+    <value>/projects/paradoxa</value>
+  </data>
+  <data name="Project2_ImagePath" xml:space="preserve">
+    <value>/assets/projects/paradoxa/paradoxa_card.png</value>
+  </data>
+  <data name="Project2_ProjectType" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Project2_Subtitle" xml:space="preserve">
+    <value>Gestão Cultural</value>
+  </data>
+  <data name="Project2_Title" xml:space="preserve">
+    <value>Paradoxa</value>
+  </data>
+  <data name="Project3_AddressPath" xml:space="preserve">
+    <value>/projects/CEffect8</value>
+  </data>
+  <data name="Project3_ImagePath" xml:space="preserve">
+    <value>/assets/projects/ceffect8/ceffect8_card.png</value>
+  </data>
+  <data name="Project3_ProjectType" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="Project3_Subtitle" xml:space="preserve">
+    <value>MAGE JAM</value>
+  </data>
+  <data name="Project3_Title" xml:space="preserve">
     <value>CEffect8</value>
   </data>
   <data name="Projects_Header_Subtitle" xml:space="preserve">

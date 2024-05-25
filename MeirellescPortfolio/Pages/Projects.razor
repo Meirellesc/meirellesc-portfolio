@@ -26,15 +26,23 @@
                          Class="cursor-pointer"
                          onclick="@(() => OnCardClick(@project.AddressPath))">
 
-                    <MudCardHeader>
+                    <MudCardHeader Style="height: 70px">
                         <CardHeaderAvatar>
-                            <MudIcon Icon="@project.IconPath" />
+                            @if(project.ProjectType == ProjectType.Game)
+                            {
+                                <MudIcon Icon="@Icons.Material.Outlined.VideogameAsset" />
+                            }
+                            else
+                            {
+                                <MudIcon Icon="@Icons.Material.Outlined.WebStories" />
+                            }
+                            
                         </CardHeaderAvatar>
 
                         <CardHeaderContent>
                             <MudItem Class="d-flex flex-column">
                                 <MudText Typo="Typo.body2">@project.GameTitle</MudText>
-                                <MudText Typo="Typo.overline">@project.GameSubtitle</MudText>
+                                <MudText Typo="Typo.overline">@project.ProjectType</MudText>
                             </MudItem>
                         </CardHeaderContent>
 
@@ -47,15 +55,6 @@
                     </MudCardHeader>
 
                     <MudCardMedia Image="@project.ImagePath" Height="250" />
-
-                    @* <MudCardContent>
-                        <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>
-                    </MudCardContent>
-
-                    <MudCardActions>
-                        <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
-                        <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
-                    </MudCardActions> *@
 
                 </MudCard>
 

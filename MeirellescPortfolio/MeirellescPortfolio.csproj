@@ -36,6 +36,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\assets\icons\" />
+    <Folder Include="wwwroot\assets\projects\theMystery\" />
   </ItemGroup>
 
 </Project>

@@ -11,7 +11,7 @@ namespace MeirellescPortfolio.Services
 
         public Task LoadSetupData(IStringLocalizer<Resource> StringLocalizer)
         {
-            for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= 3; i++)
             {
                 string stringtitle = $"Project{i}_Title";
                 string title = StringLocalizer[stringtitle];
@@ -23,7 +23,7 @@ namespace MeirellescPortfolio.Services
                     GameSubtitle = StringLocalizer[$"Project{i}_Subtitle"],
                     AddressPath = StringLocalizer[$"Project{i}_AddressPath"],
                     ImagePath = StringLocalizer[$"Project{i}_ImagePath"],
-                    IconPath = StringLocalizer[$"Project{i}_IconPath"]
+                    ProjectType = StringLocalizer[$"Project{i}_ProjectType"] == ProjectType.Game.ToString() ? ProjectType.Game : ProjectType.Website
                 };
 
                 AddProject(pModel);

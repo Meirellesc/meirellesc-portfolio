@@ -32,6 +32,8 @@ namespace MeirellescPortfolio.Layout
                 BackgroundGrey = new MudColor("#000000"),
                 Background = new MudColor("#000000"),
                 AppbarBackground = new MudColor("#000000"),
+
+                Info = new MudColor("#4D6C73"),
             },
             
             

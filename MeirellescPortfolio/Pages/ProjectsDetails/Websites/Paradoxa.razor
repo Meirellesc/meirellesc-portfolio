@@ -1,3 +1,191 @@
 ﻿@page "/projects/Paradoxa"
 
-<h3>Paradoxa</h3>
+@using MeirellescPortfolio.Components
+
+<MudContainer MaxWidth="MaxWidth.Medium">
+
+    <MudText Align="Align.Center"
+             Typo="Typo.h5"
+             Style="text-transform: uppercase;"
+             Class="mt-16">
+
+        Paradoxa
+
+    </MudText>
+
+    <MudText Align="Align.Center"
+             Typo="Typo.h6"
+             Style="text-transform: uppercase;"
+             Class="mt-4 mb-16">
+
+        Gestão Cultural
+
+    </MudText>
+
+    <MudDivider />
+
+    <MudGrid Class="my-16 d-block justify-center gap-x-2"
+             Style="text-align:center">
+    
+        <MudIcon Icon="@Icons.Material.Outlined.WebStories"/>
+
+        <MudText Align="Align.Center"
+                 Typo="Typo.h6">
+
+            Website Project
+
+        </MudText>
+
+    </MudGrid>
+
+    <MudImage Src="/assets/projects/paradoxa/banner3Blur.png" 
+              ObjectPosition="ObjectPosition.Right"
+              Style="width: 100%; max-width: 700px; float: right" />
+
+
+    <MudGrid Class="py-12 px-2">
+
+        <MudItem xs="12" sm="2" Class="align-content-center">
+            <MudText Align="Align.Center"
+                     Typo="Typo.h6"
+                     Style="text-transform: uppercase;">
+
+                About
+            </MudText>
+        </MudItem>
+
+        <MudItem xs="12" sm="10" Style="height:auto">
+            <MudText Align="Align.Justify"
+                     Typo="Typo.body1"
+                     Class="d-inline-flex flex-column">
+
+                The production company operates based on the transforming potential of culture. Their objective is to develop the autonomy of the different agents of the cultural market, based on a strategic and well-defined movement. It works mainly with writing, fundraising and execution of projects by artists, researchers and creatives, in addition to the management of cultural spaces.
+
+            </MudText>
+        </MudItem>
+    </MudGrid>
+
+
+    <MudImage Src="/assets/projects/paradoxa/banner4Blur.png"
+              Style="width: 100%; max-width: 700px; float: left" />
+
+    <MudGrid Class="py-16 px-2 gap-y-2">
+
+        <MudItem xs="12" Class="align-content-center">
+            <MudText Align="Align.Center"
+                     Typo="Typo.h6"
+                     Style="text-transform: uppercase;">
+
+                Visual Identity
+            </MudText>
+        </MudItem>
+
+        <MudItem xs="12" Style="height:auto">
+
+            <MudItem xs="12" Class="pb-6" Style="text-align:center">
+                <MudImage Src="/assets/projects/paradoxa/Typo1.png"
+                          Style="width: 100%; max-width: 600px" />
+            </MudItem>
+
+            <MudItem xs="12" Style="text-align:center">
+                <MudImage Src="/assets/projects/paradoxa/Typo2.png"
+                          Style="width: 100%; max-width: 600px" />
+            </MudItem>
+
+        </MudItem>
+    </MudGrid>
+
+    <MudDivider />
+
+    <MudGrid Class="py-16 px-2 gap-y-2">
+        <MudItem xs="12" Class="align-content-center">
+            <MudText Align="Align.Center"
+                     Typo="Typo.h6"
+                     Style="text-transform: uppercase;">
+
+                Collor Pallete
+            </MudText>
+        </MudItem>
+
+
+        <MudItem xs="12" Style="text-align:right">
+            <MudImage Src="/assets/projects/paradoxa/ColorPallete.png"
+                      Class="rounded-lg"
+                      Fluid="false"
+                      Style="width: 100%; max-width: 600px" />
+        </MudItem>
+    </MudGrid>
+
+    <MudImage Src="/assets/projects/paradoxa/banner5Blur.png"
+              Style="width: 100%; max-width: 700px; float: right" />
+
+    <MudGrid Class="py-16 px-2 gap-y-2">
+        <MudItem xs="12" Class="align-content-center">
+            <MudText Align="Align.Center"
+                     Typo="Typo.h6"
+                     Style="text-transform: uppercase;">
+
+                Project
+            </MudText>
+        </MudItem>
+
+
+        <MudItem xs="12" Style="text-align:center">
+            <MudImage Src="/assets/projects/paradoxa/WebsiteProject.png"
+                      Class="rounded-lg"
+                      Fluid="false"
+                      Style="width: 100%; max-width: 750px"/>
+        </MudItem>
+
+    </MudGrid>
+
+    <MudImage Src="/assets/projects/paradoxa/banner6Blur.png"
+              Style="width: 100%; max-width: 700px; float: left" />
+
+    <MudGrid Class="py-16 px-2 gap-y-2">
+        <MudItem xs="12" Class="align-content-center">
+            <MudText Align="Align.Center"
+                     Typo="Typo.h6"
+                     Style="text-transform: uppercase;">
+
+                Softwares & Frameworks
+            </MudText>
+        </MudItem>
+
+
+        <MudItem xs="12" Class="d-flex gap-x-16 justify-center">
+            <MudImage Src="/assets/logos/Figma.png"
+                      Class="rounded-lg"
+                      Fluid="false"
+                      Height="50" />
+
+            <MudImage Src="/assets/logos/Blazor.png"
+                      Class="rounded-lg"
+                      Fluid="false"
+                      Height="50" />
+
+            <MudImage Src="/assets/logos/VisualStudio.png"
+                      Class="rounded-lg"
+                      Fluid="false"
+                      Height="50" />
+        </MudItem>
+
+    </MudGrid>
+
+    <MudDivider />
+
+    <MudText Align="Align.Center"
+             Typo="Typo.body1"
+             Style="text-transform: uppercase;"
+             Class="mt-16 mb-8">
+
+        Thank You
+
+    </MudText>
+
+    <FooterCmpnt />
+
+</MudContainer>
+
+
+

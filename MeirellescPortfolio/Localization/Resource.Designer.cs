@@ -249,7 +249,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /projects/CEffect8.
+        ///   Looks up a localized string similar to /projects/TheMysteryOfHistoricalHeritage.
         /// </summary>
         public static string Project1_AddressPath {
             get {
@@ -258,16 +258,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /assets/icons/game_icon.svg.
-        /// </summary>
-        public static string Project1_IconPath {
-            get {
-                return ResourceManager.GetString("Project1_IconPath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to /assets/projects/ceffect8/ceffect8_card.png.
+        ///   Looks up a localized string similar to /assets/projects/theMystery/theMystery_card.png.
         /// </summary>
         public static string Project1_ImagePath {
             get {
@@ -276,7 +267,16 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MAGE JAM.
+        ///   Looks up a localized string similar to Game.
+        /// </summary>
+        public static string Project1_ProjectType {
+            get {
+                return ResourceManager.GetString("Project1_ProjectType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PG.
         /// </summary>
         public static string Project1_Subtitle {
             get {
@@ -285,11 +285,101 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CEffect8.
+        ///   Looks up a localized string similar to The Mystery Of Historical Heritage.
         /// </summary>
         public static string Project1_Title {
             get {
                 return ResourceManager.GetString("Project1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /projects/paradoxa.
+        /// </summary>
+        public static string Project2_AddressPath {
+            get {
+                return ResourceManager.GetString("Project2_AddressPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /assets/projects/paradoxa/paradoxa_card.png.
+        /// </summary>
+        public static string Project2_ImagePath {
+            get {
+                return ResourceManager.GetString("Project2_ImagePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Website.
+        /// </summary>
+        public static string Project2_ProjectType {
+            get {
+                return ResourceManager.GetString("Project2_ProjectType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gestão Cultural.
+        /// </summary>
+        public static string Project2_Subtitle {
+            get {
+                return ResourceManager.GetString("Project2_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paradoxa.
+        /// </summary>
+        public static string Project2_Title {
+            get {
+                return ResourceManager.GetString("Project2_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /projects/CEffect8.
+        /// </summary>
+        public static string Project3_AddressPath {
+            get {
+                return ResourceManager.GetString("Project3_AddressPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /assets/projects/ceffect8/ceffect8_card.png.
+        /// </summary>
+        public static string Project3_ImagePath {
+            get {
+                return ResourceManager.GetString("Project3_ImagePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Game.
+        /// </summary>
+        public static string Project3_ProjectType {
+            get {
+                return ResourceManager.GetString("Project3_ProjectType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAGE JAM.
+        /// </summary>
+        public static string Project3_Subtitle {
+            get {
+                return ResourceManager.GetString("Project3_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CEffect8.
+        /// </summary>
+        public static string Project3_Title {
+            get {
+                return ResourceManager.GetString("Project3_Title", resourceCulture);
             }
         }
         
