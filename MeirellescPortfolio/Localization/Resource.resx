@@ -189,7 +189,10 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
     <value>/projects/TheMysteryOfHistoricalHeritage</value>
   </data>
   <data name="Project1_ImagePath" xml:space="preserve">
-    <value>/assets/projects/theMystery/theMystery_card.png</value>
+    <value>/assets/projects/theMystery/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project1_ProjectDevice" xml:space="preserve">
+    <value>Mobile</value>
   </data>
   <data name="Project1_ProjectType" xml:space="preserve">
     <value>Game</value>
@@ -204,7 +207,10 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
     <value>/projects/paradoxa</value>
   </data>
   <data name="Project2_ImagePath" xml:space="preserve">
-    <value>/assets/projects/paradoxa/paradoxa_card.png</value>
+    <value>/assets/projects/paradoxa/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project2_ProjectDevice" xml:space="preserve">
+    <value>None</value>
   </data>
   <data name="Project2_ProjectType" xml:space="preserve">
     <value>Website</value>
@@ -213,13 +219,16 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
     <value>Gestão Cultural</value>
   </data>
   <data name="Project2_Title" xml:space="preserve">
-    <value>Paradoxa</value>
+    <value>Paradoxa Gestão Cultural</value>
   </data>
   <data name="Project3_AddressPath" xml:space="preserve">
     <value>/projects/CEffect8</value>
   </data>
   <data name="Project3_ImagePath" xml:space="preserve">
-    <value>/assets/projects/ceffect8/ceffect8_card.png</value>
+    <value>/assets/projects/ceffect8/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project3_ProjectDevice" xml:space="preserve">
+    <value>Desktop</value>
   </data>
   <data name="Project3_ProjectType" xml:space="preserve">
     <value>Game</value>

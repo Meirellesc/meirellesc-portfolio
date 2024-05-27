@@ -16,6 +16,22 @@ namespace MeirellescPortfolio.Services
                 string stringtitle = $"Project{i}_Title";
                 string title = StringLocalizer[stringtitle];
 
+                string pDeviceText = StringLocalizer[$"Project{i}_ProjectDevice"];
+                ProjectDevice pDevice = ProjectDevice.None;
+
+                if(pDeviceText == ProjectDevice.Mobile.ToString())
+                {
+                    pDevice = ProjectDevice.Mobile;
+                }
+                else if (pDeviceText == ProjectDevice.Desktop.ToString())
+                {
+                    pDevice = ProjectDevice.Desktop;
+                }
+                else if (pDeviceText == ProjectDevice.Console.ToString())
+                {
+                    pDevice = ProjectDevice.Console;
+                }
+
                 ProjectModel pModel = new ProjectModel()
                 {
                     Id = i,
@@ -23,7 +39,8 @@ namespace MeirellescPortfolio.Services
                     GameSubtitle = StringLocalizer[$"Project{i}_Subtitle"],
                     AddressPath = StringLocalizer[$"Project{i}_AddressPath"],
                     ImagePath = StringLocalizer[$"Project{i}_ImagePath"],
-                    ProjectType = StringLocalizer[$"Project{i}_ProjectType"] == ProjectType.Game.ToString() ? ProjectType.Game : ProjectType.Website
+                    ProjectType = StringLocalizer[$"Project{i}_ProjectType"] == ProjectType.Game.ToString() ? ProjectType.Game : ProjectType.Website,
+                    ProjectDevice = pDevice
                 };
 
                 AddProject(pModel);

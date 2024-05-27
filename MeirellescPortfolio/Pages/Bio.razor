@@ -10,14 +10,18 @@
 </CascadingValue>
 
 <MudGrid Class="d-flex justify-center mb-16">
-    <MudItem xs="12" md="6">
-        <MudText Align="Align.Justify"> @((MarkupString)StringLocalizer!["Bio_MiniBio"].Value)</MudText>
+    <MudItem xs="12" md="6"
+             Style="align-content:center">
+        <MudText Align="Align.Justify"> 
+            @((MarkupString)StringLocalizer!["Bio_MiniBio"].Value)
+        </MudText>
     </MudItem>
 
-    <MudItem xs="12" md="6">
-        <MudImage Src="/assets/logos/Me2.png"
+    <MudItem xs="12" md="6"
+             Style="text-align: center">
+        <MudImage Src="/assets/logos/LM-LogoProfile.png"
                   Alt="Profile photo of Lucas Meirelles"
-                  Fluid="true"/>
+                  Style="width: 100%; max-width: 400px;" />
     </MudItem>
 </MudGrid>
 

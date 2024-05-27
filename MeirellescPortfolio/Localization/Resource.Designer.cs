@@ -258,11 +258,20 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /assets/projects/theMystery/theMystery_card.png.
+        ///   Looks up a localized string similar to /assets/projects/theMystery/ProjectCardShadow.png.
         /// </summary>
         public static string Project1_ImagePath {
             get {
                 return ResourceManager.GetString("Project1_ImagePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mobile.
+        /// </summary>
+        public static string Project1_ProjectDevice {
+            get {
+                return ResourceManager.GetString("Project1_ProjectDevice", resourceCulture);
             }
         }
         
@@ -303,11 +312,20 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /assets/projects/paradoxa/paradoxa_card.png.
+        ///   Looks up a localized string similar to /assets/projects/paradoxa/ProjectCardShadow.png.
         /// </summary>
         public static string Project2_ImagePath {
             get {
                 return ResourceManager.GetString("Project2_ImagePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to None.
+        /// </summary>
+        public static string Project2_ProjectDevice {
+            get {
+                return ResourceManager.GetString("Project2_ProjectDevice", resourceCulture);
             }
         }
         
@@ -330,7 +348,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Paradoxa.
+        ///   Looks up a localized string similar to Paradoxa Gestão Cultural.
         /// </summary>
         public static string Project2_Title {
             get {
@@ -348,11 +366,20 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /assets/projects/ceffect8/ceffect8_card.png.
+        ///   Looks up a localized string similar to /assets/projects/ceffect8/ProjectCardShadow.png.
         /// </summary>
         public static string Project3_ImagePath {
             get {
                 return ResourceManager.GetString("Project3_ImagePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Desktop.
+        /// </summary>
+        public static string Project3_ProjectDevice {
+            get {
+                return ResourceManager.GetString("Project3_ProjectDevice", resourceCulture);
             }
         }
         

@@ -1,7 +1,44 @@
 ﻿@page "/projects"
+
 @using MeirellescPortfolio.Components
 @using MeirellescPortfolio.Models
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<style type="text/css">
+    
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .card {
+        position: relative;
+        text-align: center;
+    }
+
+    .text {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .card:hover .image {
+        opacity: 0.05;
+    }
+
+    .card:hover .text {
+        opacity: 1;
+    }
+</style>
 
 <PageTitle>@StringLocalizer?["Title_Projects"]</PageTitle>
 
@@ -11,7 +48,7 @@
     </CascadingValue>
 </CascadingValue>
 
-<MudGrid>
+<MudGrid Class="justify-center gap-y-12">
     @if (_projects == null || _projects.Count <= 0)
     {
         <MudText Typo="Typo.h5">@StringLocalizer?["Loading"]</MudText>
@@ -20,7 +57,63 @@
     {
         @foreach (var project in _projects)
         {
-            <MudItem xs="12" sm="6" md="4">
+            string projectDevice = String.Empty;
+
+            <MudItem xs="12" md="4"
+                     Class="card cursor-pointer d-flex justify-center pa-2" 
+                     Style="width: 100%; max-width:60%;">
+
+                <MudPaper Elevation="10" 
+                          Class="card d-flex flex-column pa-2 rounded-xl" 
+                          Style="height:100%; background-color:#A2938E00" 
+                          @onclick="@(() => OnCardClick(project.AddressPath))">
+
+                    <MudImage Class="image" 
+                              Src=@project.ImagePath 
+                              Alt="@project.ImagePath" 
+                              Fluid=true 
+                              ObjectFit="ObjectFit.Fill" 
+                              Style="height: 100%" />
+
+                    <MudItem xs="12"
+                             Class="text cursor-pointer d-flex flex-column justify-center pa-2"
+                             Style="align-items:center">
+
+                        <MudText Typo="Typo.body1"
+                                 Align="Align.Center"
+                                 Style="width:max-content; ">
+                            @project.GameTitle
+                        </MudText>
+
+                        @if (@project.ProjectDevice != ProjectDevice.None)
+                        {
+                            projectDevice = $" {@project.ProjectDevice.ToString()}";
+                        }
+
+                        <MudLink Typo="Typo.overline"
+                                 Align="Align.Center">
+                            @(project.ProjectType + projectDevice)
+
+                        </MudLink>
+                    </MudItem>
+
+                    @* <div class="text">
+                        <MudText Typo="Typo.h6" 
+                                 Align="Align.Center">
+                            @project.GameTitle
+                        </MudText>
+
+                        <br />
+
+                        <MudText Typo="Typo.overline"                                                  Align="Align.Center">
+                            @project.GameSubtitle
+                        </MudText>
+                    </div> *@
+
+                </MudPaper>
+            </MudItem>
+
+            @* <MudItem xs="12" sm="6" md="4">
 
                 <MudCard Elevation="6"
                          Class="cursor-pointer"
@@ -58,7 +151,7 @@
 
                 </MudCard>
 
-            </MudItem>
+            </MudItem> *@
         }
     }
 
