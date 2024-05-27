@@ -11,50 +11,136 @@
     }
     else
     {
-        <MudAppBar Fixed="true"
-                   Dense="false"
-                   Elevation="4">
+        if (_breakpoint <= Breakpoint.Md)
+        {
+            <MudAppBar Fixed="true"
+                       Dense="false"
+                       Elevation="4">
 
-            <MudButton Color="Color.Inherit"
-                       Link="/">
-                @StringLocalizer?["AppBar_Home"]
-            </MudButton>
-            <MudButton Color="Color.Inherit"
-                       Link="bio">
-                @StringLocalizer?["AppBar_Bio"]
-            </MudButton>
-            <MudButton Color="Color.Inherit"
-                       Link="projects">
-                @StringLocalizer?["AppBar_Projects"]
-            </MudButton>
-            <MudButton Color="Color.Inherit"
-                       Link="contact">
-                @StringLocalizer?["AppBar_Contact"]
-            </MudButton>
+                <MudIconButton Icon="@Icons.Material.Outlined.Menu" 
+                               Color="Color.Inherit" 
+                               Edge="Edge.Start" 
+                               OnClick="ToggleOpen"/>
 
-            <MudSpacer />
+                <MudSpacer />
 
-            <MudItem Class="d-flex flex-wrap flex-row justify-center align-center gap-2">
+                <MudItem Class="d-flex flex-wrap flex-row justify-center align-center gap-2">
 
-            <MudIconButton Icon="@Icons.Custom.Brands.GitHub" 
-                           Color="Color.Inherit"
-                           Size="Size.Small"
-                           Link="https://github.com/Meirellesc" 
-                           Target="_blank"/>
+                    <MudIconButton Icon="@Icons.Custom.Brands.GitHub"
+                                   Color="Color.Inherit"
+                                   Size="Size.Small"
+                                   Link="https://github.com/Meirellesc"
+                                   Target="_blank" />
 
-            <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
-                           Color="Color.Inherit"
-                           Size="Size.Small"
-                           Link="https://www.linkedin.com/in/lucasmeirellesc/"
-                           Target="_blank" />
+                    <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
+                                   Color="Color.Inherit"
+                                   Size="Size.Small"
+                                   Link="https://www.linkedin.com/in/lucasmeirellesc/"
+                                   Target="_blank" />
 
-            <MudIconButton Icon="@Icons.Material.Outlined.Email"
-                           Color="Color.Inherit"
-                           Size="Size.Small"
-                           Link="contact" />
+                    <MudIconButton Icon="@Icons.Material.Outlined.Email"
+                                   Color="Color.Inherit"
+                                   Size="Size.Small"
+                                   Link="contact" />
 
-            </MudItem>
-        </MudAppBar>
+                </MudItem>
+            </MudAppBar>
+
+            <MudOverlay @bind-Visible="_isOpen" 
+                        DarkBackground="true"
+                        AutoClose="true"
+                        ZIndex="100"
+                        Style="height:100%">
+                
+                <MudPaper Outlined="true" 
+                          Class="px-4 py-4"
+                          Style="height:100%">
+
+                    <MudList Clickable="true" 
+                             Dense="false"
+                             Style="height:100%">
+
+                        <MudText Color="Color.Secondary"
+                                 Align="Align.Center"
+                                 Class="pb-4">
+                            MENU
+                        </MudText>
+
+                        <MudListItem Href="\" 
+                                     Text="@StringLocalizer!["AppBar_Home"]" 
+                                     Icon="@Icons.Material.Outlined.Signpost"
+                                     Class="pt-7 px-10"
+                                     OnClick="ToggleOpen" />
+
+                        <MudListItem Href="bio" 
+                                     Text="@StringLocalizer!["AppBar_Bio"]" 
+                                     Icon="@Icons.Material.Outlined.Badge"
+                                     Class="pt-7 px-10"
+                                     OnClick="ToggleOpen" />
+
+                        <MudListItem Href="projects"
+                                     Text="@StringLocalizer!["AppBar_Projects"]" 
+                                     Icon="@Icons.Material.Outlined.Code"
+                                     Class="pt-7 px-10"
+                                     OnClick="ToggleOpen" />
+
+                        <MudListItem Href="contact" 
+                                     Text="@StringLocalizer!["AppBar_Contact"]" 
+                                     Icon="@Icons.Material.Outlined.QuestionAnswer"
+                                     Class="py-7 px-10"
+                                     OnClick="ToggleOpen" />
+                    </MudList>
+
+                </MudPaper>
+            </MudOverlay>
+        }
+        else
+        {
+            <MudAppBar Fixed="true"
+                       Dense="false"
+                       Elevation="4">
+
+                <MudButton Color="Color.Inherit"
+                           Link="/">
+                    @StringLocalizer?["AppBar_Home"]
+                </MudButton>
+                <MudButton Color="Color.Inherit"
+                           Link="bio">
+                    @StringLocalizer?["AppBar_Bio"]
+                </MudButton>
+                <MudButton Color="Color.Inherit"
+                           Link="projects">
+                    @StringLocalizer?["AppBar_Projects"]
+                </MudButton>
+                <MudButton Color="Color.Inherit"
+                           Link="contact">
+                    @StringLocalizer?["AppBar_Contact"]
+                </MudButton>
+
+                <MudSpacer />
+
+                <MudItem Class="d-flex flex-wrap flex-row justify-center align-center gap-2">
+
+                <MudIconButton Icon="@Icons.Custom.Brands.GitHub" 
+                               Color="Color.Inherit"
+                               Size="Size.Small"
+                               Link="https://github.com/Meirellesc" 
+                               Target="_blank"/>
+
+                <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
+                               Color="Color.Inherit"
+                               Size="Size.Small"
+                               Link="https://www.linkedin.com/in/lucasmeirellesc/"
+                               Target="_blank" />
+
+                <MudIconButton Icon="@Icons.Material.Outlined.Email"
+                               Color="Color.Inherit"
+                               Size="Size.Small"
+                               Link="contact" />
+
+                </MudItem>
+            </MudAppBar>
+        }
     }
 
     <MudMainContent>
