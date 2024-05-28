@@ -7,12 +7,14 @@
     <MudItem xs="12" 
              Class="d-flex flex-column justify-center align-center">
         
-        <MudText Typo="Typo.h3"> 
+        <MudText Typo="Typo.h3"
+                 Color="Color.Primary"> 
             Lucas Meirelles 
         </MudText>
 
         <MudText Typo="Typo.h6"
-                 Align="Align.Center">
+                 Align="Align.Center"
+                 Color="Color.Secondary">
             Game & Software Developer
         </MudText>
     </MudItem>
@@ -20,21 +22,21 @@
     <MudItem xs="4" sm="3" md="2" 
              Class="d-flex flex-column justify-center align-center gap-8">
 
-        <MudButton Color="Color.Inherit"
+        <MudButton Color="Color.Primary"
                    Link="bio"
                    Variant="Variant.Outlined"
                    Style="width:100%">
             @StringLocalizer?["AppBar_Bio"]
         </MudButton>
 
-        <MudButton Color="Color.Inherit"
+        <MudButton Color="Color.Primary"
                    Link="projects"
                    Variant="Variant.Outlined"
                    Style="width:100%">
             @StringLocalizer?["AppBar_Projects"]
         </MudButton>
 
-        <MudButton Color="Color.Inherit"
+        <MudButton Color="Color.Primary"
                    Link="contact"
                    Variant="Variant.Outlined"
                    Style="width:100%">
@@ -47,19 +49,19 @@
              Class="d-flex flex-wrap flex-row justify-center align-center gap-4">
 
         <MudIconButton Icon="@Icons.Custom.Brands.GitHub"
-                       Color="Color.Inherit"
+                       Color="Color.Tertiary"
                        Size="Size.Small"
                        Link="https://github.com/Meirellesc"
                        Target="_blank" />
 
         <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
-                       Color="Color.Inherit"
+                       Color="Color.Tertiary"
                        Size="Size.Small"
                        Link="https://www.linkedin.com/in/lucasmeirellesc/"
                        Target="_blank" />
 
         <MudIconButton Icon="@Icons.Material.Outlined.Email"
-                       Color="Color.Inherit"
+                       Color="Color.Tertiary"
                        Size="Size.Small"
                        Link="contact" />
 

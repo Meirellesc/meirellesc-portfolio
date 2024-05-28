@@ -1,10 +1,10 @@
-﻿using MeirellescPortfolio.Localization;
+﻿using MeirellescPortfolio.Components;
+using MeirellescPortfolio.Localization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 using MudBlazor;
 using MudBlazor.Services;
 using MudBlazor.Utilities;
-using System.Diagnostics;
 
 namespace MeirellescPortfolio.Layout
 {
@@ -12,7 +12,9 @@ namespace MeirellescPortfolio.Layout
     {
         [Inject] IStringLocalizer<Resource>? StringLocalizer { get; set; }
         [Inject] NavigationManager? NavigationManager { get; set; }
+        [Inject] IDialogService? DialogService { get; set; }
         [Inject] IBrowserViewportService? BrowserViewportService { get; set; }
+
 
         Guid IBrowserViewportObserver.Id { get; } = Guid.NewGuid();
         private Breakpoint _breakpoint;
@@ -33,11 +35,9 @@ namespace MeirellescPortfolio.Layout
 
         public async ValueTask DisposeAsync() => await BrowserViewportService!.UnsubscribeAsync(this);
 
-        public void ToggleOpen()
+        public void OpenMenu()
         {
-            Debug.Print($"Menu Antes = { _isOpen}");
-            _isOpen = !_isOpen;
-            Debug.Print($"Menu Depois = {_isOpen}");
+            DialogService!.Show<MenuDialogCmpnt>();
         }
 
         ResizeOptions IBrowserViewportObserver.ResizeOptions { get; } = new()
@@ -69,20 +69,25 @@ namespace MeirellescPortfolio.Layout
         {
             Palette = new PaletteDark()
             {
-                BackgroundGrey = new MudColor("#000000"),
-                Background = new MudColor("#000000"),
-                AppbarBackground = new MudColor("#000000"),
+                BackgroundGrey = new MudColor("#0D0D0D"),
+                Background = new MudColor("#0D0D0D"),
 
-                Info = new MudColor("#4D6C73"),
+                AppbarBackground = new MudColor("#0D0D0D"),
+                AppbarText = new MudColor("#B6F2D6"),
+                
+
+                Primary = new MudColor("#F2F2F0"),
+                Secondary = new MudColor("#D9CBA0"),
+                Info = new MudColor("#8484FF"),
+                Tertiary = new MudColor("#B6F2D6"),
             },
-            
-            
+
             LayoutProperties = new LayoutProperties()
             {
                 DrawerWidthLeft = "260px",
                 DrawerWidthRight = "300px"
             },
-
+            
             Typography = new Typography()
             {
                 Default = new Default()

@@ -103,8 +103,8 @@ code {
 }
 
 .loader {
-    --path: #ff8484ff;
-    --dot: #4dccbdff;
+    --path: #FF8484FF;
+    --dot: #B6F2D6FF;
     --duration: 3s;
     width: 44px;
     height: 44px;

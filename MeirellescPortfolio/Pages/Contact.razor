@@ -13,7 +13,7 @@
 </CascadingValue>
 
 <MudGrid Class="d-flex justify-center mb-16">
-    <MudItem xs="6">
+    <MudItem xs="10" md="8" lg="4">
         <MudForm @bind-IsValid="@success" 
                  Class="d-flex flex-column gap-6">
 
@@ -48,7 +48,7 @@
                           RequiredError="@StringLocalizer!["Contact_Form_MessageRequired"]" />
 
 
-            <MudItem Class="d-flex justify-end mt-4">
+            <MudItem Class="d-flex justify-center align-self-center mt-4">
                 <MudButton Variant="Variant.Outlined" 
                            Color="Color.Primary" 
                            Disabled="@(!success)" 

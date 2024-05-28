@@ -1,0 +1,50 @@
+﻿<MudDialog  Style="background-color: #0D0D0D;">
+    <DialogContent>
+        <MudGrid Class="px-4 d-flex justify-space-between">
+            <MudIconButton Icon="@Icons.Material.Outlined.Close"
+                           Class="pa-0"
+                           OnClick="Cancel"
+                           Style="color: #FF8484" />
+            
+           
+
+            
+        </MudGrid>
+    </DialogContent>
+
+    <DialogActions>
+        <MudGrid Class="pa-0 ma-0" Style="flex-direction: column; ">
+            <MudButton Color="Color.Tertiary"
+                       StartIcon="@Icons.Material.Outlined.Signpost"
+                       Class="my-4"
+                       Style="margin-right: 15px"
+                       Link="/">
+                @StringLocalizer?["AppBar_Home"]
+            </MudButton>
+
+            <MudButton Color="Color.Tertiary"
+                       StartIcon="@Icons.Material.Outlined.Badge"
+                       Style="margin-right: 15px"
+                       Class="my-4"
+                       Link="bio">
+                @StringLocalizer?["AppBar_Bio"]
+            </MudButton>
+
+            <MudButton Color="Color.Tertiary"
+                       StartIcon="@Icons.Material.Outlined.Code"
+                       Style="margin-right: 15px"
+                       Class="my-4"
+                       Link="projects">
+                @StringLocalizer?["AppBar_Projects"]
+            </MudButton>
+
+            <MudButton Color="Color.Tertiary"
+                       StartIcon="@Icons.Material.Outlined.QuestionAnswer"
+                       Style="margin-right: 15px"
+                       Class="my-4"
+                       Link="contact">
+                @StringLocalizer?["AppBar_Contact"]
+            </MudButton>
+        </MudGrid>
+    </DialogActions>
+</MudDialog>

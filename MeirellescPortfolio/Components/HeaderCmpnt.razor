@@ -2,13 +2,15 @@
 <MudContainer Class="d-flex flex-column justify-center pa-16" Style="height:60vh">
 
     <MudText Align="Align.Center"
-             Typo="Typo.h3">
+             Typo="Typo.h3"
+             Color="Color.Primary">
         @((MarkupString)HeaderTitle!.Value)
     </MudText>
 
     <MudText Class="mt-4"
              Align="Align.Center"
-             Typo="Typo.h5">
+             Typo="Typo.h5"
+             Color="Color.Secondary">
         @((MarkupString)HeaderSubtitle!.Value)
     </MudText>
 
@@ -17,6 +19,7 @@
                    Icon="@Icons.Material.Outlined.KeyboardArrowDown"
                    DisableRipple="true"
                    Style="width: max-content; align-self: center;" 
+                   Color="Color.Secondary"
                    OnClick="() => OnScrollToElement()"/>
                     
 </MudContainer>
