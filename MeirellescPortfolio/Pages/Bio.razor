@@ -12,16 +12,124 @@
 <MudGrid Class="d-flex justify-center mb-16">
     <MudItem xs="12" md="6"
              Style="align-content:center">
-        <MudText Align="Align.Justify"> 
-            @((MarkupString)StringLocalizer!["Bio_MiniBio"].Value)
+        <MudText Align="Align.Justify"
+                 Typo="Typo.h6"> 
+            Technical Skills
+        </MudText>
+
+        <MudText Class="ml-5 my-5">
+            Game Development:
+            
+            <MudChip Icon="@Icons.Material.Outlined.VideogameAsset" 
+                     Label="true" 
+                     Style="@($"color:{Colors.BlueGrey.Lighten5} ; background:{Colors.BlueGrey.Darken3};")">
+                Unity
+            </MudChip>
+
+        </MudText>
+
+        <MudText Class="ml-5 my-5">
+            Programming Languages:
+
+            <MudChip Icon="@Icons.Material.Outlined.Code"
+                     Label="true"
+                     Style="@($"color:{Colors.DeepPurple.Lighten5} ; background:{Colors.DeepPurple.Darken3};")">
+                C#
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.Code"
+                     Label="true"
+                     Style="@($"color:{Colors.DeepPurple.Lighten5} ; background:{Colors.DeepPurple.Darken3};")">
+                Java
+            </MudChip>
+
+        </MudText>
+
+        <MudText Class="ml-5 my-5">
+            Web Development:
+
+            <MudChip Icon="@Icons.Material.Outlined.WebAsset"
+                     Label="true"
+                     Style="@($"color:{Colors.Teal.Lighten5} ; background:{Colors.Teal.Darken3};")">
+                Blazor
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.WebAsset"
+                     Label="true"
+                     Style="@($"color:{Colors.Teal.Lighten5} ; background:{Colors.Teal.Darken3};")">
+                JavaScript
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.WebAsset"
+                     Label="true"
+                     Style="@($"color:{Colors.Teal.Lighten5} ; background:{Colors.Teal.Darken3};")">
+                HTML
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.WebAsset"
+                     Label="true"
+                     Style="@($"color:{Colors.Teal.Lighten5} ; background:{Colors.Teal.Darken3};")">
+                CSS
+            </MudChip>
+
+        </MudText>
+
+        <MudText Class="ml-5 my-5">
+            Game Patterns:
+
+            <MudChip Icon="@Icons.Material.Outlined.Gamepad"
+                     Label="true"
+                     Style="@($"color:{Colors.Pink.Lighten5} ; background:{Colors.Pink.Darken4};")">
+                Game Loop
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.Gamepad"
+                     Label="true"
+                     Style="@($"color:{Colors.Pink.Lighten5} ; background:{Colors.Pink.Darken4};")">
+                Update
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.Gamepad"
+                     Label="true"
+                     Style="@($"color:{Colors.Pink.Lighten5} ; background:{Colors.Pink.Darken4};")">
+                Prototype
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.Gamepad"
+                     Label="true"
+                     Style="@($"color:{Colors.Pink.Lighten5} ; background:{Colors.Pink.Darken4};")">
+                Component
+            </MudChip>
+
+        </MudText>
+
+        <MudText Class="ml-5 my-5">
+            Software Patterns:
+
+            <MudChip Icon="@Icons.Material.Outlined.Flag"
+                     Label="true"
+                     Style="@($"color:{Colors.Amber.Lighten5} ; background:{Colors.Amber.Darken4};")">
+                SOLID
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.Flag"
+                     Label="true"
+                     Style="@($"color:{Colors.Amber.Lighten5} ; background:{Colors.Amber.Darken4};")">
+                KISS
+            </MudChip>
+
+        </MudText>
+
+        <MudText Class="ml-5 my-5">
+            Quality Assurance:
+
+            <MudChip Icon="@Icons.Material.Outlined.FactCheck"
+                     Label="true"
+                     Style="@($"color:{Colors.Blue.Lighten5} ; background:{Colors.Blue.Darken4};")">
+                Unit Test
+            </MudChip>
+
         </MudText>
     </MudItem>
 
     <MudItem xs="12" md="6"
-             Style="text-align: center">
+             Class="mt-10 pb-0"
+             Style="text-align: center;">
         <MudImage Src="/assets/logos/LM-LogoProfile.png"
                   Alt="Profile photo of Lucas Meirelles"
-                  Style="width: 100%; max-width: 400px;" />
+                  Style="width: 80%; max-width: 350px;" />
     </MudItem>
 </MudGrid>
 

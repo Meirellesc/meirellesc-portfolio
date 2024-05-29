@@ -1,0 +1,156 @@
+﻿*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0px;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    animation: container-turn 15000ms linear infinite;
+}
+
+    .container .ring {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 10px solid #4D6C73;
+        position: relative;
+        z-index: 5;
+        box-shadow: inset 0px 0px 0px 2px black, 0px 0px 0px 2px black;
+    }
+
+    .container .ball-context-layer {
+        position: absolute;
+        inset: 0;
+        animation: ball-layer-change 1500ms ease-in-out infinite;
+    }
+
+    .container .ball-container {
+        position: absolute;
+        inset: 0;
+        animation: container-turn 15000ms linear infinite;
+    }
+
+        .container .ball-container .ball {
+            position: absolute;
+            top: 50%;
+            left: -5px;
+            width: 20px;
+            height: 20px;
+        }
+
+            .container .ball-container .ball::after {
+                content: "";
+                background-color: #B6F2D6;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 2px solid black;
+                opacity: 0;
+                animation: ball-move 1500ms ease-in-out infinite, fade-in 300ms forwards;
+            }
+
+.ball-context-layer--1, .ball-context-layer--1 .ball-container, .ball-context-layer--1 .ball, .ball-context-layer--1 .ball::after {
+    animation-delay: 0.25s !important;
+}
+
+.ball-context-layer--2, .ball-context-layer--2 .ball-container, .ball-context-layer--2 .ball, .ball-context-layer--2 .ball::after {
+    animation-delay: 0.5s !important;
+}
+
+.ball-context-layer--3, .ball-context-layer--3 .ball-container, .ball-context-layer--3 .ball, .ball-context-layer--3 .ball::after {
+    animation-delay: 0.75s !important;
+}
+
+.ball-context-layer--4, .ball-context-layer--4 .ball-container, .ball-context-layer--4 .ball, .ball-context-layer--4 .ball::after {
+    animation-delay: 1s !important;
+}
+
+.ball-context-layer--5, .ball-context-layer--5 .ball-container, .ball-context-layer--5 .ball, .ball-context-layer--5 .ball::after {
+    animation-delay: 1.25s !important;
+}
+
+.ball-context-layer--6, .ball-context-layer--6 .ball-container, .ball-context-layer--6 .ball, .ball-context-layer--6 .ball::after {
+    animation-delay: 1.5s !important;
+}
+
+.ball-context-layer--7, .ball-context-layer--7 .ball-container, .ball-context-layer--7 .ball, .ball-context-layer--7 .ball::after {
+    animation-delay: 1.75s !important;
+}
+
+.ball-context-layer--8, .ball-context-layer--8 .ball-container, .ball-context-layer--8 .ball, .ball-context-layer--8 .ball::after {
+    animation-delay: 2s !important;
+}
+
+.ball-context-layer--9, .ball-context-layer--9 .ball-container, .ball-context-layer--9 .ball, .ball-context-layer--9 .ball::after {
+    animation-delay: 2.25s !important;
+}
+
+.ball-context-layer--10, .ball-context-layer--10 .ball-container, .ball-context-layer--10 .ball, .ball-context-layer--10 .ball::after {
+    animation-delay: 2.5s !important;
+}
+
+@keyframes ball-turn {
+    from {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes container-turn {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes ball-move {
+    0% {
+        transform: translateX(-100%);
+        scale: 0.9;
+    }
+
+    50% {
+        transform: translateX(100%);
+        scale: 0.9;
+    }
+
+    75% {
+        scale: 1.1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        scale: 0.9;
+    }
+}
+
+@keyframes ball-layer-change {
+    from {
+        z-index: 0;
+    }
+
+    to {
+        z-index: 10;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
