@@ -36,13 +36,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include=".github\workflows\" />
     <Folder Include="wwwroot\assets\icons\" />
     <Folder Include="wwwroot\assets\projects\315am\" />
     <Folder Include="wwwroot\assets\projects\theMystery\" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include=".github\workflows\main.yml" />
+    <None Include="C:\Users\lucas\Projects\meirellesc-portfolio\.github\workflows\main.yml" Link="main.yml" />
   </ItemGroup>
 
 </Project>
