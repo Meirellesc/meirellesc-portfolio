@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -13,7 +13,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.2" PrivateAssets="all" />
     <PackageReference Include="MudBlazor" Version="6.16.0" />
-    <PackageReference Include="Notion.Net" Version="4.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,14 +35,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include=".github\workflows\" />
     <Folder Include="wwwroot\assets\icons\" />
+    <Folder Include="wwwroot\assets\logos\" />
     <Folder Include="wwwroot\assets\projects\315am\" />
     <Folder Include="wwwroot\assets\projects\theMystery\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="C:\Users\lucas\Projects\meirellesc-portfolio\.github\workflows\main.yml" Link="main.yml" />
+    <Folder Include="wwwroot\assets\projects\ceffect8\" />
+    <Folder Include="wwwroot\assets\projects\paradoxa\" />
   </ItemGroup>
 
 </Project>
