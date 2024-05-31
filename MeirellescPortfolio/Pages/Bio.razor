@@ -1,4 +1,5 @@
 ﻿@page "/bio"
+
 @using MeirellescPortfolio.Components
 
 <PageTitle>@((MarkupString)StringLocalizer!["Title_Bio"].Value)</PageTitle>
@@ -11,127 +12,172 @@
 
 <MudGrid Class="d-flex justify-center mb-16">
     <MudItem xs="12" md="6"
-             Style="align-content:center">
-        <MudText Align="Align.Justify"
-                 Typo="Typo.h6"> 
-            Technical Skills
-        </MudText>
+             Style="align-content:start">
 
-        <MudText Class="ml-5 my-5">
+        <MudItem Class="d-flex d-inline justify-center">
+            <MudIcon Icon="@Icons.Material.Outlined.Description"
+                     Color="Color.Secondary"
+                     Class="pa-0 ma-1" />
+
+            <MudText Align="Align.Justify"
+                     Typo="Typo.h6"
+                     Color="Color.Secondary"
+                     Style="font-weight: bold"
+                     Class="pa-0 ma-0">
+                About
+            </MudText>
+        </MudItem>
+
+        <MudText Class="mx-2 my-5" Style="text-align: justify;">
+            Dynamic and versatile Game Developer (Unity) and Back-End Developer (.NET) with a strong academic background in Automation and Control Engineering, complemented by a technical diploma in Mechatronics. <br/><br/>
+            
+            Possesses advanced expertise in various programming languages, web technologies, and software design principles. Known for a solid understanding of design patterns and unit testing, ensuring high-quality and maintainable code.<br /><br />
+
+            Committed to continuous learning and professional development, with a passion for creating innovative games.
+
+            Adept at working in multicultural environments and collaborating with cross-functional teams.
+
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="12" md="6"
+             Style="align-content:start">
+
+        <MudItem Class="d-flex d-inline justify-center">
+            <MudIcon Icon="@Icons.Material.Outlined.Workspaces"
+                     Color="Color.Secondary"
+                     Class="pa-0 ma-1" />
+
+            <MudText Align="Align.Justify"
+                     Typo="Typo.h6"
+                     Color="Color.Secondary"
+                     Style="font-weight: bold"
+                     Class="pa-0 ma-0">
+                Technical Skills
+            </MudText>
+        </MudItem>
+
+        <MudText Class="mx-2 my-5">
             Game Development:
             
             <MudChip Icon="@Icons.Material.Outlined.VideogameAsset" 
                      Label="true" 
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.BlueGrey.Lighten5} ; background:{Colors.BlueGrey.Darken3};")">
+                     Style="@($"color:{Colors.BlueGrey.Lighten3} ; border-color:{Colors.BlueGrey.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 Unity
             </MudChip>
 
         </MudText>
 
-        <MudText Class="ml-5 my-5">
+        <MudText Class="mx-2 my-5">
             Programming Languages:
 
             <MudChip Icon="@Icons.Material.Outlined.Code"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.DeepPurple.Lighten5} ; background:{Colors.DeepPurple.Darken3};")">
+                     Style="@($"color:{Colors.DeepPurple.Lighten3} ; border-color:{Colors.DeepPurple.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 C#
             </MudChip>
             <MudChip Icon="@Icons.Material.Outlined.Code"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.DeepPurple.Lighten5} ; background:{Colors.DeepPurple.Darken3};")">
+                     Style="@($"color:{Colors.DeepPurple.Lighten3} ; border-color:{Colors.DeepPurple.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 Java
             </MudChip>
 
         </MudText>
 
-        <MudText Class="ml-5 my-5">
+        <MudText Class="mx-2 my-5">
             Web Development:
 
             <MudChip Icon="@Icons.Material.Outlined.WebAsset"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Teal.Lighten5} ; background:{Colors.Teal.Darken3};")">
+                     Style="@($"color:{Colors.Teal.Lighten3} ; border-color:{Colors.Teal.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 Blazor
             </MudChip>
             <MudChip Icon="@Icons.Material.Outlined.WebAsset"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Teal.Lighten5} ; background:{Colors.Teal.Darken3};")">
+                     Style="@($"color:{Colors.Teal.Lighten3} ; border-color:{Colors.Teal.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 JavaScript
             </MudChip>
             <MudChip Icon="@Icons.Material.Outlined.WebAsset"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Teal.Lighten5} ; background:{Colors.Teal.Darken3};")">
+                     Style="@($"color:{Colors.Teal.Lighten3} ; border-color:{Colors.Teal.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 HTML
             </MudChip>
             <MudChip Icon="@Icons.Material.Outlined.WebAsset"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Teal.Lighten5} ; background:{Colors.Teal.Darken3};")">
+                     Style="@($"color:{Colors.Teal.Lighten3} ; border-color:{Colors.Teal.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 CSS
             </MudChip>
 
         </MudText>
 
-        <MudText Class="ml-5 my-5">
+        <MudText Class="mx-2 my-5">
             Game Patterns:
 
             <MudChip Icon="@Icons.Material.Outlined.Gamepad"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Pink.Lighten5} ; background:{Colors.Pink.Darken4};")">
+                     Style="@($"color:{Colors.Pink.Lighten3} ; border-color:{Colors.Pink.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 Game Loop
             </MudChip>
             <MudChip Icon="@Icons.Material.Outlined.Gamepad"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Pink.Lighten5} ; background:{Colors.Pink.Darken4};")">
+                     Style="@($"color:{Colors.Pink.Lighten3} ; border-color:{Colors.Pink.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 Update
             </MudChip>
             <MudChip Icon="@Icons.Material.Outlined.Gamepad"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Pink.Lighten5} ; background:{Colors.Pink.Darken4};")">
+                     Style="@($"color:{Colors.Pink.Lighten3} ; border-color:{Colors.Pink.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 Prototype
             </MudChip>
             <MudChip Icon="@Icons.Material.Outlined.Gamepad"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Pink.Lighten5} ; background:{Colors.Pink.Darken4};")">
+                     Style="@($"color:{Colors.Pink.Lighten3} ; border-color:{Colors.Pink.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 Component
+            </MudChip>
+            <MudChip Icon="@Icons.Material.Outlined.Gamepad"
+                     Label="true"
+                     Variant="Variant.Outlined"
+                     Style="@($"color:{Colors.Pink.Lighten3} ; border-color:{Colors.Pink.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
+                Scriptable Objects
             </MudChip>
 
         </MudText>
 
-        <MudText Class="ml-5 my-5">
+        <MudText Class="mx-2 my-5">
             Software Patterns:
 
             <MudChip Icon="@Icons.Material.Outlined.Flag"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Amber.Lighten5} ; background:{Colors.Amber.Darken4};")">
+                     Style="@($"color:{Colors.Amber.Lighten3}; border-color:{Colors.Amber.Darken3}; ; border-left-width: medium; border-bottom-width: medium;")">
                 SOLID
             </MudChip>
             <MudChip Icon="@Icons.Material.Outlined.Flag"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Amber.Lighten5} ; background:{Colors.Amber.Darken4};")">
+                     Style="@($"color:{Colors.Amber.Lighten3} ; border-color:{Colors.Amber.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 KISS
             </MudChip>
 
         </MudText>
 
-        <MudText Class="ml-5 my-5">
+        <MudText Class="mx-2 my-5">
             Quality Assurance:
 
             <MudChip Icon="@Icons.Material.Outlined.FactCheck"
                      Label="true"
                      Variant="Variant.Outlined"
-                     Style="@($"color:{Colors.Blue.Lighten5} ; background:{Colors.Blue.Darken4};")">
+                     Style="@($"color:{Colors.Blue.Lighten3} ; border-color:{Colors.Blue.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
                 Unit Test
             </MudChip>
 
@@ -139,12 +185,149 @@
     </MudItem>
 
     <MudItem xs="12" md="6"
-             Class="mt-10 pb-0"
-             Style="text-align: center;">
-        <MudImage Src="/assets/logos/LM-LogoProfile.png"
-                  Alt="Profile photo of Lucas Meirelles"
-                  Style="width: 80%; max-width: 350px;" />
+             Style="align-content:start">
+
+        <MudItem Class="d-flex d-inline justify-center">
+            <MudIcon Icon="@Icons.Material.Outlined.Games"
+                     Color="Color.Secondary"
+                     Class="pa-0 ma-1" />
+
+            <MudText Align="Align.Justify"
+                     Typo="Typo.h6"
+                     Color="Color.Secondary"
+                     Style="font-weight: bold"
+                     Class="pa-0 ma-0">
+                Game Jams
+            </MudText>
+        </MudItem>
+
+        <MudText Class="mx-2 my-5">
+
+            <MudChip Label="true"
+                     Variant="Variant.Outlined"
+                     Size="Size.Small"
+                     Style="@($"color:{Colors.LightGreen.Lighten5} ; border-left-width: medium; border-bottom-width: medium;")">
+                2023
+            </MudChip>
+
+            GameJam+
+
+            <MudIconButton Icon="@Icons.Material.Outlined.Link"
+                           Link="https://meirellesc.com/projects/315am"
+                           Class="my-0 mx-2 pa-0" />
+
+        </MudText>
+
+        <MudText Class="mx-2 my-5">
+
+            <MudChip Label="true"
+                     Variant="Variant.Outlined"
+                     Size="Size.Small"
+                     Style="@($"color:{Colors.LightGreen.Lighten5} ; border-left-width: medium; border-bottom-width: medium;")">
+                2022
+            </MudChip>
+
+            MageJam
+
+            <MudIconButton Icon="@Icons.Material.Outlined.Link"
+                           Link="https://meirellesc.com/projects/CEffect8"
+                           Class="my-0 mx-2 pa-0"/>
+
+        </MudText>
     </MudItem>
+
+    <MudItem xs="12" md="6"
+             Style="align-content:start">
+
+        <MudItem Class="d-flex d-inline justify-center">
+            <MudIcon Icon="@Icons.Material.Outlined.AirplanemodeActive"
+                     Color="Color.Secondary"
+                     Class="pa-0 ma-1"/>
+        
+            <MudText Align="Align.Justify"
+                     Typo="Typo.h6"
+                     Color="Color.Secondary"
+                     Style="font-weight: bold"
+                     Class="pa-0 ma-0" >
+                International Experience
+            </MudText>
+        </MudItem>
+
+        <MudText Class="mx-2 my-5" Style="text-align: justify;">
+
+            <MudChip Label="true"
+                     Variant="Variant.Outlined"
+                     Size="Size.Small"
+                     Style="@($"color:{Colors.LightGreen.Lighten5} ; border-left-width: medium; border-bottom-width: medium;")">
+                2019
+            </MudChip>
+
+            Collaborated with a diverse team at Synaos in Hannover, Germany, my international experience was highly enriching, involving work with Autonomous Guided Vehicles (AGVs) and focusing primarily on developing advanced vehicle management systems for industrial applications.
+            
+            <br /><br /><br />
+
+            <MudChip Label="true"
+                     Variant="Variant.Outlined"
+                     Size="Size.Small"
+                     Style="@($"color:{Colors.LightGreen.Lighten5} ; border-left-width: medium; border-bottom-width: medium;")">
+                2018
+            </MudChip>
+           Participated in an exchange program at the University of Alicante, Spain. Gained exposure to diverse cultures and languages, while enhancing technical knowledge in programming and game development.<br /><br />
+
+
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="12" md="6"
+             Style="align-content:start">
+
+        <MudItem Class="d-flex d-inline justify-center">
+            <MudIcon Icon="@Icons.Material.Outlined.Language"
+                     Color="Color.Secondary"
+                     Class="pa-0 ma-1" />
+
+            <MudText Align="Align.Justify"
+                     Typo="Typo.h6"
+                     Color="Color.Secondary"
+                     Style="font-weight: bold"
+                     Class="pa-0 ma-0">
+                Languages
+            </MudText>
+        </MudItem>
+
+        <MudText Class="mx-2 my-5">
+            Main: 
+
+            <MudChip 
+                     Label="true"
+                     Variant="Variant.Outlined"
+                     Size="Size.Small"
+                     Style="@($"color:{Colors.LightGreen.Lighten3} ; border-color:{Colors.LightGreen.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
+                Portuguese
+            </MudChip>
+
+        </MudText>
+
+        <MudText Class="mx-2 my-5">
+            Secondary:
+
+            <MudChip Label="true"
+                     Variant="Variant.Outlined"
+                     Size="Size.Small"
+                     Style="@($"color:{Colors.LightBlue.Lighten3} ; border-color:{Colors.LightBlue.Darken4}; border-left-width: medium; border-bottom-width: medium;")">
+                English
+            </MudChip>
+
+            <MudChip Label="true"
+                     Variant="Variant.Outlined"
+                     Size="Size.Small"
+                     Style="@($"color:{Colors.Red.Lighten3} ; border-color:{Colors.Red.Darken3}; border-left-width: medium; border-bottom-width: medium;")">
+                Spanish
+            </MudChip>
+
+        </MudText>
+    </MudItem>
+
 </MudGrid>
 
 <FooterCmpnt />

@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BlazorVideoPlayer" Version="3.0.0" />
     <PackageReference Include="Majorsoft.Blazor.Components.Common.JsInterop" Version="1.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.2" PrivateAssets="all" />
@@ -36,6 +37,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\assets\icons\" />
+    <Folder Include="wwwroot\assets\projects\315am\" />
     <Folder Include="wwwroot\assets\projects\theMystery\" />
   </ItemGroup>
 

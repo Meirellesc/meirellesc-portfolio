@@ -39,5 +39,7 @@ public class Program
         builder.Services.AddLocalization();
 
         builder.Services.AddSingleton<IProjectService, ProjectService>();
+
+        builder.Services.AddVideoPlayerServices();
     }
 }

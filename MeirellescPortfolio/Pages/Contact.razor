@@ -14,45 +14,55 @@
 
 <MudGrid Class="d-flex justify-center mb-16">
     <MudItem xs="10" md="8" lg="4">
-        <MudForm @bind-IsValid="@success" 
+        <MudForm @ref="form"
+                 @bind-IsValid="@_success" 
                  Class="d-flex flex-column gap-6">
 
-            <MudTextField T="string" 
+            <MudTextField T="string"
+                          @bind-Value="@Name"
                           Label="@StringLocalizer!["Contact_Form_Name"]"
                           Placeholder="//Your name"
                           Variant="Variant.Outlined"
+                          OnlyValidateIfDirty="true"
                           Required="true" 
                           RequiredError="@StringLocalizer!["Contact_Form_NameRequired"]" />
 
-            <MudTextField T="string" 
+            <MudTextField T="string"
+                          @bind-Value="@Email"
                           Label="@StringLocalizer!["Contact_Form_Email"]"
                           Placeholder="//Your e-mail"
                           Variant="Variant.Outlined"
+                          OnlyValidateIfDirty="true"
                           Required="true" 
                           RequiredError="@StringLocalizer!["Contact_Form_EmailRequired"]"
                           Validation="@(new EmailAddressAttribute() {ErrorMessage = @StringLocalizer!["Contact_Form_EmailError"]})" />
                                 
-                          @*TODO travar para adicionar apenas numero *@
             <MudTextField T="string"
+                          @bind-Value="@Phone"
                           Label="@StringLocalizer!["Contact_Form_Phone"]"
                           Placeholder="//Your phone (if you want)"
                           Variant="Variant.Outlined"
                           Required="false"/>
 
-            <MudTextField T="string" 
+            <MudTextField T="string"
+                          @bind-Value="@Message"
                           Label="@StringLocalizer!["Contact_Form_Message"]"
                           Placeholder="//Leave a comment here"
                           Variant="Variant.Outlined"
                           Lines="5"
+                          OnlyValidateIfDirty="true"
                           Required="true"
                           RequiredError="@StringLocalizer!["Contact_Form_MessageRequired"]" />
 
 
             <MudItem Class="d-flex justify-center align-self-center mt-4">
-                <MudButton Variant="Variant.Outlined" 
+                <MudButton ButtonType="ButtonType.Submit"
+                           Variant="Variant.Outlined" 
                            Color="Color.Primary" 
-                           Disabled="@(!success)" 
-                           Class="ml-auto">
+                           Disabled="@(!_success)" 
+                           Class="ml-auto"
+                           OnClick="@(()=>form.ResetAsync())"
+                           Href="@(EmailBodyCompose())">
                     @StringLocalizer!["Contact_Form_Send"]
                 </MudButton>
             </MudItem>

@@ -203,41 +203,71 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
   <data name="Project1_Title" xml:space="preserve">
     <value>The Mystery Of Historical Heritage</value>
   </data>
+  <data name="Project1_Year" xml:space="preserve">
+    <value>2024</value>
+  </data>
   <data name="Project2_AddressPath" xml:space="preserve">
-    <value>/projects/paradoxa</value>
+    <value>/projects/315am</value>
   </data>
   <data name="Project2_ImagePath" xml:space="preserve">
-    <value>/assets/projects/paradoxa/ProjectCardShadow.png</value>
+    <value>/assets/projects/315am/ProjectCardShadow.png</value>
   </data>
   <data name="Project2_ProjectDevice" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="Project2_ProjectType" xml:space="preserve">
-    <value>Website</value>
-  </data>
-  <data name="Project2_Subtitle" xml:space="preserve">
-    <value>Gestão Cultural</value>
-  </data>
-  <data name="Project2_Title" xml:space="preserve">
-    <value>Paradoxa Gestão Cultural</value>
-  </data>
-  <data name="Project3_AddressPath" xml:space="preserve">
-    <value>/projects/CEffect8</value>
-  </data>
-  <data name="Project3_ImagePath" xml:space="preserve">
-    <value>/assets/projects/ceffect8/ProjectCardShadow.png</value>
-  </data>
-  <data name="Project3_ProjectDevice" xml:space="preserve">
     <value>Desktop</value>
   </data>
-  <data name="Project3_ProjectType" xml:space="preserve">
+  <data name="Project2_ProjectType" xml:space="preserve">
     <value>Game</value>
   </data>
+  <data name="Project2_Subtitle" xml:space="preserve">
+    <value>GameJamPlus</value>
+  </data>
+  <data name="Project2_Title" xml:space="preserve">
+    <value>3:15 am</value>
+  </data>
+  <data name="Project2_Year" xml:space="preserve">
+    <value>2023</value>
+  </data>
+  <data name="Project3_AddressPath" xml:space="preserve">
+    <value>/projects/Paradoxa</value>
+  </data>
+  <data name="Project3_ImagePath" xml:space="preserve">
+    <value>/assets/projects/paradoxa/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project3_ProjectDevice" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Project3_ProjectType" xml:space="preserve">
+    <value>Website</value>
+  </data>
   <data name="Project3_Subtitle" xml:space="preserve">
-    <value>MAGE JAM</value>
+    <value>Gestão Cultural</value>
   </data>
   <data name="Project3_Title" xml:space="preserve">
+    <value>Paradoxa Gestão Cultural</value>
+  </data>
+  <data name="Project3_Year" xml:space="preserve">
+    <value>2023</value>
+  </data>
+  <data name="Project4_AddressPath" xml:space="preserve">
+    <value>/projects/CEffect8</value>
+  </data>
+  <data name="Project4_ImagePath" xml:space="preserve">
+    <value>/assets/projects/ceffect8/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project4_ProjectDevice" xml:space="preserve">
+    <value>Desktop</value>
+  </data>
+  <data name="Project4_ProjectType" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="Project4_Subtitle" xml:space="preserve">
+    <value>MAGE JAM</value>
+  </data>
+  <data name="Project4_Title" xml:space="preserve">
     <value>CEffect8</value>
+  </data>
+  <data name="Project4_Year" xml:space="preserve">
+    <value>2022</value>
   </data>
   <data name="Projects_Header_Subtitle" xml:space="preserve">
     <value>Leveling Up My Career</value>
@@ -245,11 +275,11 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
   <data name="Projects_Header_Title" xml:space="preserve">
     <value>Projects</value>
   </data>
-  <data name="Test" xml:space="preserve">
-    <value>This is the first line.&lt;br&gt;This is the second line.</value>
-  </data>
   <data name="Title_Bio" xml:space="preserve">
     <value>Meirellesc - Bio</value>
+  </data>
+  <data name="Title_CEffect8" xml:space="preserve">
+    <value>Meirellesc - Projects - CEffect8</value>
   </data>
   <data name="Title_Contact" xml:space="preserve">
     <value>Meirellesc - Contact</value>
@@ -257,7 +287,13 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
   <data name="Title_Home" xml:space="preserve">
     <value>Meirellesc - Home</value>
   </data>
+  <data name="Title_Paradoxa" xml:space="preserve">
+    <value>Meirellesc - Projects - Paradoxa</value>
+  </data>
   <data name="Title_Projects" xml:space="preserve">
     <value>Meirellesc - Projects</value>
+  </data>
+  <data name="Title_TheMystery" xml:space="preserve">
+    <value>Meirellesc - Projects - The Mystery Of Historical Heritage</value>
   </data>
 </root>

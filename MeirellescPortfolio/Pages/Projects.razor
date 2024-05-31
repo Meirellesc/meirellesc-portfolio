@@ -96,63 +96,17 @@
                             @(project.ProjectType + projectDevice)
 
                         </MudLink>
+
+                        <MudText Typo="Typo.body2"
+                                 Align="Align.Center"
+                                 Color="Color.Secondary"
+                                 Style="width:max-content; ">
+                            @project.GameYear
+                        </MudText>
                     </MudItem>
-
-                    @* <div class="text">
-                        <MudText Typo="Typo.h6" 
-                                 Align="Align.Center">
-                            @project.GameTitle
-                        </MudText>
-
-                        <br />
-
-                        <MudText Typo="Typo.overline"                                                  Align="Align.Center">
-                            @project.GameSubtitle
-                        </MudText>
-                    </div> *@
 
                 </MudPaper>
             </MudItem>
-
-            @* <MudItem xs="12" sm="6" md="4">
-
-                <MudCard Elevation="6"
-                         Class="cursor-pointer"
-                         onclick="@(() => OnCardClick(@project.AddressPath))">
-
-                    <MudCardHeader Style="height: 70px">
-                        <CardHeaderAvatar>
-                            @if(project.ProjectType == ProjectType.Game)
-                            {
-                                <MudIcon Icon="@Icons.Material.Outlined.VideogameAsset" />
-                            }
-                            else
-                            {
-                                <MudIcon Icon="@Icons.Material.Outlined.WebStories" />
-                            }
-                            
-                        </CardHeaderAvatar>
-
-                        <CardHeaderContent>
-                            <MudItem Class="d-flex flex-column">
-                                <MudText Typo="Typo.body2">@project.GameTitle</MudText>
-                                <MudText Typo="Typo.overline">@project.ProjectType</MudText>
-                            </MudItem>
-                        </CardHeaderContent>
-
-                        <CardHeaderActions>
-                            <MudIconButton Icon="@Icons.Material.Outlined.ReadMore"
-                                           Color="Color.Info"
-                                           OnClick="@(() => OnCardClick(@project.AddressPath))" />
-                        </CardHeaderActions>
-
-                    </MudCardHeader>
-
-                    <MudCardMedia Image="@project.ImagePath" Height="250" />
-
-                </MudCard>
-
-            </MudItem> *@
         }
     }
 

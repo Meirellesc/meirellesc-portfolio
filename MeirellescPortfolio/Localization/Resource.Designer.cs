@@ -303,7 +303,16 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /projects/paradoxa.
+        ///   Looks up a localized string similar to 2024.
+        /// </summary>
+        public static string Project1_Year {
+            get {
+                return ResourceManager.GetString("Project1_Year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /projects/315am.
         /// </summary>
         public static string Project2_AddressPath {
             get {
@@ -312,7 +321,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /assets/projects/paradoxa/ProjectCardShadow.png.
+        ///   Looks up a localized string similar to /assets/projects/315am/ProjectCardShadow.png.
         /// </summary>
         public static string Project2_ImagePath {
             get {
@@ -321,7 +330,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to None.
+        ///   Looks up a localized string similar to Desktop.
         /// </summary>
         public static string Project2_ProjectDevice {
             get {
@@ -330,7 +339,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Website.
+        ///   Looks up a localized string similar to Game.
         /// </summary>
         public static string Project2_ProjectType {
             get {
@@ -339,7 +348,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gestão Cultural.
+        ///   Looks up a localized string similar to GameJamPlus.
         /// </summary>
         public static string Project2_Subtitle {
             get {
@@ -348,7 +357,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Paradoxa Gestão Cultural.
+        ///   Looks up a localized string similar to 3:15 am.
         /// </summary>
         public static string Project2_Title {
             get {
@@ -357,7 +366,16 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /projects/CEffect8.
+        ///   Looks up a localized string similar to 2023.
+        /// </summary>
+        public static string Project2_Year {
+            get {
+                return ResourceManager.GetString("Project2_Year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /projects/Paradoxa.
         /// </summary>
         public static string Project3_AddressPath {
             get {
@@ -366,7 +384,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /assets/projects/ceffect8/ProjectCardShadow.png.
+        ///   Looks up a localized string similar to /assets/projects/paradoxa/ProjectCardShadow.png.
         /// </summary>
         public static string Project3_ImagePath {
             get {
@@ -375,7 +393,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Desktop.
+        ///   Looks up a localized string similar to None.
         /// </summary>
         public static string Project3_ProjectDevice {
             get {
@@ -384,7 +402,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Game.
+        ///   Looks up a localized string similar to Website.
         /// </summary>
         public static string Project3_ProjectType {
             get {
@@ -393,7 +411,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MAGE JAM.
+        ///   Looks up a localized string similar to Gestão Cultural.
         /// </summary>
         public static string Project3_Subtitle {
             get {
@@ -402,11 +420,83 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CEffect8.
+        ///   Looks up a localized string similar to Paradoxa Gestão Cultural.
         /// </summary>
         public static string Project3_Title {
             get {
                 return ResourceManager.GetString("Project3_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2023.
+        /// </summary>
+        public static string Project3_Year {
+            get {
+                return ResourceManager.GetString("Project3_Year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /projects/CEffect8.
+        /// </summary>
+        public static string Project4_AddressPath {
+            get {
+                return ResourceManager.GetString("Project4_AddressPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /assets/projects/ceffect8/ProjectCardShadow.png.
+        /// </summary>
+        public static string Project4_ImagePath {
+            get {
+                return ResourceManager.GetString("Project4_ImagePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Desktop.
+        /// </summary>
+        public static string Project4_ProjectDevice {
+            get {
+                return ResourceManager.GetString("Project4_ProjectDevice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Game.
+        /// </summary>
+        public static string Project4_ProjectType {
+            get {
+                return ResourceManager.GetString("Project4_ProjectType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAGE JAM.
+        /// </summary>
+        public static string Project4_Subtitle {
+            get {
+                return ResourceManager.GetString("Project4_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CEffect8.
+        /// </summary>
+        public static string Project4_Title {
+            get {
+                return ResourceManager.GetString("Project4_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2022.
+        /// </summary>
+        public static string Project4_Year {
+            get {
+                return ResourceManager.GetString("Project4_Year", resourceCulture);
             }
         }
         
@@ -429,20 +519,20 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is the first line.&lt;br&gt;This is the second line..
-        /// </summary>
-        public static string Test {
-            get {
-                return ResourceManager.GetString("Test", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Meirellesc - Bio.
         /// </summary>
         public static string Title_Bio {
             get {
                 return ResourceManager.GetString("Title_Bio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Meirellesc - Projects - CEffect8.
+        /// </summary>
+        public static string Title_CEffect8 {
+            get {
+                return ResourceManager.GetString("Title_CEffect8", resourceCulture);
             }
         }
         
@@ -465,11 +555,29 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Meirellesc - Projects - Paradoxa.
+        /// </summary>
+        public static string Title_Paradoxa {
+            get {
+                return ResourceManager.GetString("Title_Paradoxa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Meirellesc - Projects.
         /// </summary>
         public static string Title_Projects {
             get {
                 return ResourceManager.GetString("Title_Projects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Meirellesc - Projects - The Mystery Of Historical Heritage.
+        /// </summary>
+        public static string Title_TheMystery {
+            get {
+                return ResourceManager.GetString("Title_TheMystery", resourceCulture);
             }
         }
     }
