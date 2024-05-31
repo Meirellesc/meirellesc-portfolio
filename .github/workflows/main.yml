@@ -34,13 +34,13 @@ jobs:
       run: dotnet workload install wasm-tools
 
     - name: Restore Dependencies
-      run: dotnet restore
+      run: cd ../.. && cd MeirellescPortfolio dotnet restore
   
     - name: Build
-      run: dotnet build -c Release --no-restore
+      run: cd ../.. && cd MeirellescPortfolio dotnet build -c Release --no-restore
 
     - name: Publish
-      run: dotnet publish MeirellescPortfolio.csproj -c:Release -o docs --nologo
+      run: cd ../.. && cd MeirellescPortfolio dotnet publish MeirellescPortfolio.csproj -c:Release -o docs --nologo
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
