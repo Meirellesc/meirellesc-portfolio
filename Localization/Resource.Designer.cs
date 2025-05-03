@@ -249,7 +249,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /projects/TheMysteryOfHistoricalHeritage.
+        ///   Looks up a localized string similar to /projects/TheMysteryOfTheHeritage.
         /// </summary>
         public static string Project1_AddressPath {
             get {
