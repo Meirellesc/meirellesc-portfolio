@@ -1,41 +1,19 @@
-<!DOCTYPE html>
-    <html lang="en">
-
+﻿<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meirellesc Portfolio...</title>
 
-        <meta property="og:title" content="Meirellesc">
-        <meta property="og:description" content="Meirellesc - Portfolio">
-        <meta property="og:image" content="https://www.meirellesc.com/assets/logos/LM-LogoProfile.png">
-        <meta property="og:url" content="https://www.meirellesc.com/">
-        <meta property="og:type" content="website">
+        <script type="text/javascript">
 
-        <title>Meirellesc Portfolio</title>
+            // Reconstrói a URL completa
+            var redirectUrl = '/index.html?redirect=' + encodeURIComponent(location.pathname + location.search + location.hash);
 
-        <!--<base href="/" />-->
-        <base href="https://www.meirellesc.com/" />
+            // Redireciona
+            location.replace(redirectUrl);
 
-        <link rel="stylesheet" href="css/app.css" />
-
-        <link rel="stylesheet" href="css/loading.css" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
-        <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
-
-        <link rel="icon" type="image/png" href="favicon.png" />
-
-        <link href="MeirellescPortfolio.styles.css" rel="stylesheet" />
-
-        <link href="manifest.webmanifest" rel="manifest" />
-
-        <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
-        <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+        </script>
     </head>
 
     <body style="background-color: #0D0D0D ">
@@ -104,19 +82,5 @@
                 </div>
             </div>
         </div>
-
-        <div id="blazor-error-ui">
-            An unhandled error has occurred.
-            <a href="" class="reload">Reload</a>
-            <a class="dismiss">🗙</a>
-        </div>
-
-        <script>navigator.serviceWorker.register('service-worker.js');</script>
-
-        <!--<script src="_framework/blazor.webassembly.js?temporaryQueryString=1"></script>-->
-        <script src="_framework/blazor.webassembly.js"></script>
-
-        <script src="_content/MudBlazor/MudBlazor.min.js"></script>
     </body>
-
 </html>
