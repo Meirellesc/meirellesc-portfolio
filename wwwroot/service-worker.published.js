@@ -41,9 +41,9 @@ async function onActivate() {
 async function onFetch(event) {
     const url = new URL(event.request.url);
 
-    // Ignora requisições externas (ex: Google Analytics, fontes externas)
+    // Ignorar domínios externos como Google, CDN, etc.
     if (url.origin !== self.origin) {
-        return fetch(event.request);
+        return fetch(event.request).catch(() => new Response('', { status: 503, statusText: 'Service Unavailable' }));
     }
 
     if (event.request.method !== 'GET') {
