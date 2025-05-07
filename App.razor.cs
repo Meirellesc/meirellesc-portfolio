@@ -4,7 +4,7 @@ namespace MeirellescPortfolio
 {
     public partial class App : ComponentBase
     {
-        [Inject] NavigationManager? Navigation { get; set; };
+        [Inject] NavigationManager? Navigation { get; set; }
 
         protected override void OnInitialized()
         {
