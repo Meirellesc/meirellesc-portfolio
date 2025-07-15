@@ -231,7 +231,7 @@ namespace MeirellescPortfolio.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to © 2024 ALL RIGHTS RESERVED - LUCAS MEIRELLES.
+        ///   Looks up a localized string similar to © 2025 ALL RIGHTS RESERVED - LUCAS MEIRELLESC.
         /// </summary>
         public static string Footer {
             get {
@@ -578,6 +578,15 @@ namespace MeirellescPortfolio.Localization {
         public static string Title_TheMystery {
             get {
                 return ResourceManager.GetString("Title_TheMystery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome.
+        /// </summary>
+        public static string Welcome {
+            get {
+                return ResourceManager.GetString("Welcome", resourceCulture);
             }
         }
     }

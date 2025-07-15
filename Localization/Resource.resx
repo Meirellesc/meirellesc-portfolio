@@ -180,7 +180,7 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
     <value>Contact for Co-op</value>
   </data>
   <data name="Footer" xml:space="preserve">
-    <value>© 2024 ALL RIGHTS RESERVED - LUCAS MEIRELLES</value>
+    <value>© 2025 ALL RIGHTS RESERVED - LUCAS MEIRELLESC</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>HOME</value>
@@ -295,5 +295,8 @@ In 2018, I did an exchange program at the University of Alicante (Spain), when I
   </data>
   <data name="Title_TheMystery" xml:space="preserve">
     <value>Meirellesc - Projects - The Mystery Of Historical Heritage</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
   </data>
 </root>
