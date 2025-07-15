@@ -10,12 +10,12 @@ namespace MeirellescPortfolio.Pages.ProjectsDetails.Games
         [Inject] IStringLocalizer<Resource>? StringLocalizer { get; set; }
 
         private List<Source> _sources = new()
-    {
-        new()
         {
-            Src = "/assets/projects/315am/315am-GameJam+.mp4",
-            Type = "video/mp4"
-        }
-    };
+            new()
+            {
+                Src = "/assets/projects/315am/315am-GameJam+.mp4",
+                Type = "video/mp4"
+            }
+        };
     }
 }

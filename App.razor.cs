@@ -7,16 +7,26 @@ namespace MeirellescPortfolio
     {
         [Inject] NavigationManager? Navigation { get; set; }
 
+        private static bool _hasRedirected = false;
+
         protected override void OnInitialized()
         {
-            var uri = new Uri(Navigation.Uri);
-            var path = uri.AbsolutePath.ToLowerInvariant();
-            var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
-            var redirect = query["redirect"];
+            if (_hasRedirected) return;
+
+            //Exemplo: uri= https://localhost:7200/projects
+            Uri? uri = new Uri(Navigation.Uri);
+
+            // Exemplo: projects
+            string? path = uri.AbsolutePath.ToLowerInvariant();
+
+            System.Collections.Specialized.NameValueCollection? query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+
+            string? redirect = query["redirect"];
 
             // Redireciona apenas se estiver em /index.html com redirect
-            if (path.EndsWith("/index.html") && !string.IsNullOrEmpty(redirect))
+            if (Navigation.Uri.Contains("redirect=") && !path.Equals(redirect, StringComparison.OrdinalIgnoreCase))
             {
+                _hasRedirected = true;
                 Navigation.NavigateTo(redirect, true);
             }
         }
