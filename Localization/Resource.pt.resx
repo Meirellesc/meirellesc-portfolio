@@ -117,6 +117,185 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AppBar_Bio" xml:space="preserve">
+    <value>Bio</value>
+  </data>
+  <data name="AppBar_Contact" xml:space="preserve">
+    <value>Contato</value>
+  </data>
+  <data name="AppBar_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="AppBar_Projects" xml:space="preserve">
+    <value>Projetos</value>
+  </data>
+  <data name="Bio_Header_Subtitle" xml:space="preserve">
+    <value>Meu personagem principal</value>
+  </data>
+  <data name="Bio_Header_Title" xml:space="preserve">
+    <value>Bio</value>
+  </data>
+  <data name="Bio_MiniBio" xml:space="preserve">
+    <value>Atualmente trabalhando como desenvolvedor de jogos (Unity) e desenvolvedor de back-end (.NET).
+Graduado em Bacharelado em Automação e Engenheiro e Técnico da Control em Mecatrônica, com conhecimento avançado em: &lt;br&gt;
+・ Unity; &lt;br&gt;
+・ Programação orientada à objetos (C# e Java); &lt;br&gt;
+・ Web (Blazor e JavaScript); &lt;br&gt;
+・ Conceitos de 'padrões de design' (sólido); &lt;br&gt;
+・ Testes de unidade. &lt;br&gt;
+&lt;br&gt; &lt;br&gt;
+Em 2018, fiz um programa de intercâmbio na Universidade de Alicante (Espanha), quando pude entrar em contato com diferentes culturas e idiomas, além de expandir meu conhecimento técnico em programação e jogos.</value>
+  </data>
+  <data name="Contact_Form_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Contact_Form_EmailError" xml:space="preserve">
+    <value>O e-mail é inválido</value>
+  </data>
+  <data name="Contact_Form_EmailRequired" xml:space="preserve">
+    <value>O e-mail é obrigatório</value>
+  </data>
+  <data name="Contact_Form_Message" xml:space="preserve">
+    <value>Mensagem</value>
+  </data>
+  <data name="Contact_Form_MessageRequired" xml:space="preserve">
+    <value>Mensagem é obrigatória</value>
+  </data>
+  <data name="Contact_Form_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Contact_Form_NameRequired" xml:space="preserve">
+    <value>Nome é obrigatório</value>
+  </data>
+  <data name="Contact_Form_Phone" xml:space="preserve">
+    <value>Celular</value>
+  </data>
+  <data name="Contact_Form_Send" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="Contact_Header_Subtitle" xml:space="preserve">
+    <value>Vamos nos unir</value>
+  </data>
+  <data name="Contact_Header_Title" xml:space="preserve">
+    <value>Contato para co-op</value>
+  </data>
+  <data name="Footer" xml:space="preserve">
+    <value>© 2025 TODOS DIREITOS RESERVADOS - LUCAS MEIRELLESC</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="Project1_AddressPath" xml:space="preserve">
+    <value>/projects/TheMysteryOfTheHeritage</value>
+  </data>
+  <data name="Project1_ImagePath" xml:space="preserve">
+    <value>/assets/projects/theMystery/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project1_ProjectDevice" xml:space="preserve">
+    <value>Celular</value>
+  </data>
+  <data name="Project1_ProjectType" xml:space="preserve">
+    <value>Jogo</value>
+  </data>
+  <data name="Project1_Subtitle" xml:space="preserve">
+    <value>PG</value>
+  </data>
+  <data name="Project1_Title" xml:space="preserve">
+    <value>O Mistério dos Patrimônios</value>
+  </data>
+  <data name="Project1_Year" xml:space="preserve">
+    <value>2024</value>
+  </data>
+  <data name="Project2_AddressPath" xml:space="preserve">
+    <value>/projects/315am</value>
+  </data>
+  <data name="Project2_ImagePath" xml:space="preserve">
+    <value>/assets/projects/315am/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project2_ProjectDevice" xml:space="preserve">
+    <value>Computador</value>
+  </data>
+  <data name="Project2_ProjectType" xml:space="preserve">
+    <value>Jogo</value>
+  </data>
+  <data name="Project2_Subtitle" xml:space="preserve">
+    <value>GameJamPlus</value>
+  </data>
+  <data name="Project2_Title" xml:space="preserve">
+    <value>3:15 am</value>
+  </data>
+  <data name="Project2_Year" xml:space="preserve">
+    <value>2023</value>
+  </data>
+  <data name="Project3_AddressPath" xml:space="preserve">
+    <value>/projects/Paradoxa</value>
+  </data>
+  <data name="Project3_ImagePath" xml:space="preserve">
+    <value>/assets/projects/paradoxa/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project3_ProjectDevice" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Project3_ProjectType" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="Project3_Subtitle" xml:space="preserve">
+    <value>Gestão Cultural</value>
+  </data>
+  <data name="Project3_Title" xml:space="preserve">
+    <value>Paradoxa Gestão Cultural</value>
+  </data>
+  <data name="Project3_Year" xml:space="preserve">
+    <value>2023</value>
+  </data>
+  <data name="Project4_AddressPath" xml:space="preserve">
+    <value>/projects/CEffect8</value>
+  </data>
+  <data name="Project4_ImagePath" xml:space="preserve">
+    <value>/assets/projects/ceffect8/ProjectCardShadow.png</value>
+  </data>
+  <data name="Project4_ProjectDevice" xml:space="preserve">
+    <value>Computador</value>
+  </data>
+  <data name="Project4_ProjectType" xml:space="preserve">
+    <value>Jogo</value>
+  </data>
+  <data name="Project4_Subtitle" xml:space="preserve">
+    <value>MAGE JAM</value>
+  </data>
+  <data name="Project4_Title" xml:space="preserve">
+    <value>CEffect8</value>
+  </data>
+  <data name="Project4_Year" xml:space="preserve">
+    <value>2022</value>
+  </data>
+  <data name="Projects_Header_Subtitle" xml:space="preserve">
+    <value>Upando minha carreira</value>
+  </data>
+  <data name="Projects_Header_Title" xml:space="preserve">
+    <value>Projetos</value>
+  </data>
+  <data name="Title_Bio" xml:space="preserve">
+    <value>Meirellesc - Bio</value>
+  </data>
+  <data name="Title_CEffect8" xml:space="preserve">
+    <value>Meirellesc - Projetos - CEffect8</value>
+  </data>
+  <data name="Title_Contact" xml:space="preserve">
+    <value>Meirellesc - Contato</value>
+  </data>
+  <data name="Title_Home" xml:space="preserve">
+    <value>Meirellesc - Home</value>
+  </data>
+  <data name="Title_Paradoxa" xml:space="preserve">
+    <value>Meirellesc - Projetos - Paradoxa</value>
+  </data>
+  <data name="Title_Projects" xml:space="preserve">
+    <value>Meirellesc - Projetos</value>
+  </data>
+  <data name="Title_TheMystery" xml:space="preserve">
+    <value>Meirellesc - Projetos - O Mistério dos Patrimônios</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Boas vindas</value>
   </data>
